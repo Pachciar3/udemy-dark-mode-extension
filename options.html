@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Settings - Dark mode for Udemy</title>
+    <link rel="stylesheet" href="./css/options.min.css" />
+  </head>
+
+  <body>
+    <h1 class="main-title">Dark mode for Udemy</h1>
+    <div class="options">
+      <h2 class="options__title">Choose your theme colours!</h2>
+      <div id="buttonDiv"></div>
+      <div class="option">
+        <button
+          class="option__btn"
+          data-slidetoggle="box1"
+          aria-controls="box1"
+          aria-expanded="false"
+        >
+          --primary-bg-color<svg
+            class="question-answer__arrow-icon"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-down"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            ></path>
+          </svg>
+        </button>
+        <form class="option__collapse" id="box1">
+          <div class="option__con">
+            <div class="option__con-left">
+              <fieldset class="field">
+                <label class="field__label" for="color-text"
+                  >Write color in hexadecimal
+                </label>
+                <div class="field__con">
+                  <span class="field__prefix">#</span>
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="color-text"
+                    maxlength="6"
+                  />
+                </div>
+              </fieldset>
+            </div>
+            <div class="option__con-separator">or</div>
+            <div class="option__con-right">
+              <fieldset class="field">
+                <label class="field__label" for="color-picker"
+                  >Pick color</label
+                >
+                <div class="field__con">
+                  <input
+                    class="field__input"
+                    id="color-picker"
+                    name="Color Picker"
+                    type="color"
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="option__btn-con">
+            <button class="btn">Zapisz</button
+            ><span class="option__info option__info--danger"
+              >Incorrect data!</span
+            >
+          </div>
+        </form>
+      </div>
+      <div class="option">
+        <button
+          class="option__btn option__btn--even"
+          data-slidetoggle="box2"
+          aria-controls="box2"
+          aria-expanded="false"
+        >
+          --primary-bg-color<svg
+            class="question-answer__arrow-icon"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-down"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            ></path>
+          </svg>
+        </button>
+        <form class="option__collapse" id="box2">
+          <div class="option__con">
+            <div class="option__con-left">
+              <fieldset class="field">
+                <label class="field__label" for="color-text"
+                  >Write color in hexadecimal
+                </label>
+                <div class="field__con">
+                  <span class="field__prefix">#</span>
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="color-text"
+                    maxlength="6"
+                  />
+                </div>
+              </fieldset>
+            </div>
+            <div class="option__con-separator">or</div>
+            <div class="option__con-right">
+              <fieldset class="field">
+                <label class="field__label" for="color-picker"
+                  >Pick color</label
+                >
+                <div class="field__con">
+                  <input
+                    class="field__input"
+                    id="color-picker"
+                    name="Color Picker"
+                    type="color"
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="option__btn-con">
+            <button class="btn">Zapisz</button
+            ><span class="option__info option__info--success">Sent!</span>
+          </div>
+        </form>
+      </div>
+      <div class="option">
+        <button
+          class="option__btn"
+          data-slidetoggle="box3"
+          aria-controls="box3"
+          aria-expanded="false"
+        >
+          --primary-bg-color<svg
+            class="question-answer__arrow-icon"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-down"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            ></path>
+          </svg>
+        </button>
+        <form class="option__collapse" id="box3">
+          <div class="option__con">
+            <div class="option__con-left">
+              <fieldset class="field">
+                <label class="field__label" for="color-text"
+                  >Write color in hexadecimal
+                </label>
+                <div class="field__con">
+                  <span class="field__prefix">#</span>
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="color-text"
+                    maxlength="6"
+                  />
+                </div>
+              </fieldset>
+            </div>
+            <div class="option__con-separator">or</div>
+            <div class="option__con-right">
+              <fieldset class="field">
+                <label class="field__label" for="color-picker"
+                  >Pick color</label
+                >
+                <div class="field__con">
+                  <input
+                    class="field__input"
+                    id="color-picker"
+                    name="Color Picker"
+                    type="color"
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="option__btn-con">
+            <button class="btn">Zapisz</button
+            ><span class="option__info option__info--danger"
+              >Incorrect data!</span
+            >
+          </div>
+        </form>
+      </div>
+      <footer class="main-footer">
+        Created by <a href="https://dawid-pachciarek.pl">Dawid Pachciarek</a>
+      </footer>
+    </div>
+  </body>
+  <script src="options.js"></script>
+</html>
