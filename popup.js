@@ -1,15 +1,43 @@
-let changeColor = document.getElementById('changeColor');
+let changeColor = document.getElementById("changeColor");
 
-chrome.storage.sync.get('color', function (data) {
-  changeColor.style.backgroundColor = data.color;
-  changeColor.setAttribute('value', data.color);
+document.getElementById("options-page").addEventListener("click", () => {
+  chrome.tabs.create({ url: "/options.html" });
 });
-changeColor.onclick = function (element) {
-  // let color = element.target.value;
-  // chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-  //   chrome.tabs.executeScript(
-  //     tabs[0].id,
-  //     { code: 'document.documentElement.style.setProperty("--main-bg-color", "' + color + '");document.body.classList.add("dark_mode_on");' });
-  //   chrome.tabs.insertCSS({ file: "style.css" });
-  // });
-}
+
+chrome.storage.sync.get("udemy_dark_mode", function(data) {
+  changeColor.checked = data.udemy_dark_mode;
+  console.log(data);
+});
+
+document.querySelectorAll("a").forEach(item => {
+  const link = item.getAttribute("href");
+  item.addEventListener("click", () => {
+    chrome.tabs.create({ url: link });
+  });
+});
+
+changeColor.onclick = function() {
+  chrome.storage.sync.get("udemy_dark_mode", function(result) {
+    if (result.udemy_dark_mode === false) {
+      chrome.storage.sync.set({ udemy_dark_mode: true }, () => {
+        chrome.tabs.query({ active: true, currentWindow: true }, function(
+          tabs
+        ) {
+          chrome.tabs.executeScript(tabs[0].id, {
+            file: "content.js"
+          });
+        });
+      });
+    } else {
+      chrome.storage.sync.set({ udemy_dark_mode: false }, () => {
+        chrome.tabs.query({ active: true, currentWindow: true }, function(
+          tabs
+        ) {
+          chrome.tabs.executeScript(tabs[0].id, {
+            code: "document.body.classList.remove('dark_mode_on');"
+          });
+        });
+      });
+    }
+  });
+};

@@ -1,0 +1,163 @@
+body.dark_mode_on {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-font-color);
+
+  .container--light-grey,
+  .link-bar--wrapper--2tiYo,
+  .sidebar-notice--container--1pToS,
+  .topic-menu,
+  .search-result-page--search-result-container--1QJaS {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-font-color);
+  }
+  .container--light-grey {
+    border-top: 1px solid var(--primary-font-color);
+  }
+  *:not(.form-control) {
+    color: var(--primary-font-color);
+  }
+
+  .c_header {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-font-color);
+  }
+
+  .merchandising-course-card--mask--2-b-d,
+  .merchandising-course-card--course-title--2Ob4m,
+  .popover--popover--1sy7H {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-font-color);
+  }
+
+  .merchandising-course-card--mask--2-b-d,
+  .merchandising-course-card--course-title--2Ob4m,
+  .header--header--3sK1h,
+  .description-unit--skills-hub__description--YPW3a,
+  .panel-default,
+  .dropdown-menu,
+  .dropdown-menu .dropdown-menu--level-two,
+  .modal-content,
+  .btn-quaternary,
+  .brand-testimonials--testimonial-card--2hzgA,
+  .footer-v6 footer,
+  .single-course-unit-desktop--single-course-unit-content--1SR-P,
+  .topic-button--topic-button--39McU,
+  .person-card--person-card--39UrP,
+  .curriculum-course-card--container--1ZgwU:hover,
+  .filter-panel--container--aq5nC,
+  .list-view-course-card--container--2fJ9s:hover,
+  .link-bar-item--menu__item--2QDNh:not(.link-bar-item--lead-item--mZFmh)
+    .active,
+  .link-bar-item--menu__item--2QDNh:not(.link-bar-item--lead-item--mZFmh):hover,
+  .what-you-get,
+  .right-col__module,
+  .bundle-unit--container--3LI46,
+  .curriculum-wrapper .section-container,
+  .btn .btn-default,
+  .course-comparison-item--content-container--3L5DT:hover,
+  .comparison-module--wrapper--2n6AG,
+  .course-info-card--wrapper--Sazls,
+  .featured-review .featured-review__container,
+  .search-result-page--result-header--2MN29,
+  .search-result-page--all-filters-container--1kgaW,
+  .styles--clickable-banner--QHEVe,
+  .styles--clickable-banner__background--3hDkQ,
+  .udlite-footer .footer-section {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--primary-font-color) !important;
+  }
+  .btn-quaternary {
+    border: 1px solid var(--secondary-font-color);
+  }
+  .btn-quaternary:hover,
+  .btn-quaternary:focus {
+    border: 1px solid var(--primary-font-color);
+  }
+
+  .carousel-arrow,
+  input,
+  .instructor-response--container--yPk8G,
+  .refund-notice--refund-notice--1nq4D,
+  .btn-default {
+    background-color: var(--light-grey-bg-color) !important;
+    color: var(--primary-font-color) !important;
+  }
+
+  .es-autocomplete--primary .input-group,
+  .es-autocomplete--primary .input-group,
+  .menu__link:hover,
+  .topic-menu__link:hover,
+  .curriculum-wrapper .lecture-container {
+    background-color: var(--light-grey-bg-color) !important;
+    color: var(--secondary-font-color) !important;
+  }
+
+  .unit-title--title-box--3tVMv h2,
+  .skills-hub-unit-desktop--skill-link--3SpB6.skills-hub-unit-desktop--is-active--3ql8W,
+  .btn-link:hover,
+  .es-autocomplete--primary .input-group::placeholder,
+  .btn,
+  input::placeholder,
+  .clp-lead__title,
+  .category--section-title--3SLWt,
+  .featured-course-unit-desktop--title--22_zg,
+  .jumbotron__title h1,
+  .requirements__title,
+  .description__title,
+  .view-more-container--view-more__title--3OY_y,
+  .curriculum-header-title,
+  .bundle-unit--title--2hVFH,
+  .reviews-section--title--2Uzsu,
+  .what-you-get__title,
+  .curriculum-wrapper
+    .lecture-container.lecture-container--preview
+    .title
+    a:hover,
+  .price-text--light--3Zi7y span,
+  .udlite-heading-xxxl,
+  .banner--headline--L86zL,
+  .banner--sub-headline--39BWB {
+    color: var(--secondary-font-color) !important;
+  }
+
+  .quick-view-box--objective-text--1ro4W,
+  .curriculum-wrapper .lecture-container .title {
+    color: var(--primary-font-color) !important;
+  }
+
+  .curriculum-wrapper .lecture-container.lecture-container--preview .title a {
+    color: var(--primary-font-color) !important;
+    font-weight: 700 !important;
+  }
+
+  .badge .badge-text,
+  .smart-bar--smart-bar--1rOkE,
+  .smart-bar-timer--timer-container--2mwOn span,
+  .smart-bar--smart-bar__close--3mCup,
+  .smart-bar--smart-bar__title--1LFsk,
+  .smart-bar--smart-bar__subtitle--I38FP,
+  .udlite-badge-bestseller {
+    color: var(--secondary-bg-color) !important;
+  }
+
+  .c_header .dropdown--topics .dropdown-menu__list > li.maintain-hover > a {
+    background: initial;
+  }
+
+  .instructor--instructor--2qudS
+    .instructor--instructor__view-more-wrapper--w6L78,
+  .view-more-container--view-more__button-container--gradient--CmaZZ,
+  .js-wrapper-simple-collapse-more-btn {
+    background: linear-gradient(
+      rgba(42, 42, 42, 0),
+      rgba(42, 42, 42, 0.95),
+      #2a2a2a
+    );
+  }
+  .c_header .dropdown--open-on-hover .dropdown-menu:before {
+    border-color: transparent transparent var(--secondary-bg-color) transparent !important;
+  }
+  .instructor-response--arrow--1Qcf6:after {
+    border-bottom-color: var(--light-grey-bg-color) !important;
+  }
+}

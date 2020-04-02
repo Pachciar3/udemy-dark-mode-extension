@@ -2,16 +2,10 @@
   "name": "UDEMY DARK MODE",
   "version": "1.0",
   "description": "Dark mode for udemy website",
-  "permissions": [
-    "activeTab",
-    "declarativeContent",
-    "storage"
-  ],
+  "permissions": ["activeTab", "declarativeContent", "storage"],
   "options_page": "options.html",
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "page_action": {
@@ -31,15 +25,9 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://www.udemy.com/*"
-      ],
-      "css": [
-        "style.css"
-      ],
-      "js": [
-        "content.js"
-      ],
+      "matches": ["https://www.udemy.com/*"],
+      "css": ["css/style.min.css"],
+      "js": ["content.js"],
       "run_at": "document_end"
     }
   ],
