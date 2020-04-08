@@ -1,7 +1,6 @@
 /*FAST STYLES*/
 body:not(.dark_mode_off) {
   background-color: #121212 !important;
-  color: var(--primary-font-color);
   .c_header,
   .footer-v6 footer,
   .section--section-heading--2k6aW,
@@ -18,9 +17,17 @@ body:not(.dark_mode_off) {
   .main-route--user-messaging__right--27tZ- {
     background-color: #121212;
   }
-  // .curriculum-wrapper .lecture-container{
+}
 
-  // }
+:root {
+  --primary-bg-color: #121212;
+  --secondary-bg-color: #2a2a2a;
+  --light-bg-color: #4e4949;
+  --very-light-bg-color: #736868;
+  --udemy-darkblue-bg-color: #29303b;
+  --primary-font-color: #dcc2c2;
+  --secondary-font-color: #ffffff;
+  --success-font-color: #ffff00;
 }
 
 /*SLOW STYLES*/
@@ -31,6 +38,7 @@ body.dark_mode_on {
   *:not(.form-control) {
     color: var(--primary-font-color);
   }
+
   /*PRIMARY BAGCKGROUND*/
   .container--light-grey,
   .link-bar--wrapper--2tiYo,
@@ -52,29 +60,6 @@ body.dark_mode_on {
   .reply-form--message-thread__new--d9LHV form {
     background-color: var(--primary-bg-color);
     color: var(--primary-font-color);
-  }
-  .container--light-grey,
-  .footer__inst-banner {
-    border-top: 1px solid var(--primary-font-color);
-  }
-
-  .c_header {
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-font-color);
-  }
-
-  .c_header .dropdown--open-on-hover .dropdown-menu::after,
-  .c_header .dropdown--open-on-hover .dropdown-menu::before {
-    border-color: transparent transparent var(--secondary-font-color)
-      transparent;
-  }
-
-  .merchandising-course-card--mask--2-b-d,
-  .merchandising-course-card--course-title--2Ob4m,
-  .popover--popover--1sy7H,
-  .form-control-counter {
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-font-color);
   }
 
   /*SECONDARY BAGCKGROUND*/
@@ -156,14 +141,18 @@ body.dark_mode_on {
     background-color: var(--secondary-bg-color) !important;
     color: var(--primary-font-color) !important;
   }
-  .btn-quaternary {
-    border: 1px solid var(--secondary-font-color);
-  }
-  .btn-quaternary:hover,
-  .btn-quaternary:focus {
-    border: 1px solid var(--primary-font-color);
+
+  /*SECONDARY BAGCKGROUND && SECONDARY FONT*/
+  .merchandising-course-card--mask--2-b-d,
+  .merchandising-course-card--course-title--2Ob4m,
+  .popover--popover--1sy7H,
+  .form-control-counter,
+  .c_header {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-font-color);
   }
 
+  /*LIGHT BAGCKGROUND && PRIMARY FONT*/
   .carousel-arrow,
   input,
   .instructor-response--container--yPk8G,
@@ -186,10 +175,11 @@ body.dark_mode_on {
     .base-thread-item--message-thread__container--2sOg4,
   .base-thread-item--message-thread--2pjVx.base-thread-item--active--1LVBL
     .base-thread-item--message-thread__container--2sOg4 {
-    background-color: var(--light-grey-bg-color) !important;
+    background-color: var(--light-bg-color) !important;
     color: var(--primary-font-color) !important;
   }
 
+  /*LIGHT GREY BAGCKGROUND && SECONDARY FONT*/
   .es-autocomplete--primary .input-group,
   .es-autocomplete--primary .input-group,
   .menu__link:hover,
@@ -221,11 +211,13 @@ body.dark_mode_on {
   .checkbox-inline:not(.checkbox-slide):not(.checkbox-button)
     input[type="checkbox"]:not(:checked)
     + .checkbox-label:after {
-    background-color: var(--light-grey-bg-color) !important;
+    background-color: var(--light-bg-color) !important;
     color: var(--secondary-font-color) !important;
   }
+
+  /*VERY LIGHT BACKGROUND*/
   .input-group-addon {
-    background-color: #736868;
+    background-color: var(--very-light-bg-color);
   }
 
   .btn-secondary:disabled,
@@ -237,16 +229,41 @@ body.dark_mode_on {
   .btn-primary.disabled,
   .btn-primary[disabled],
   fieldset[disabled] .btn-primary {
-    background-color: #736868 !important;
+    background-color: var(--very-light-bg-color) !important;
   }
+
+  /*UDEMY BACKGROUND*/
   .purchase-text,
   .btn-danger,
   .instructor-wrapper .instructor__tab-container.container--light-grey,
   .link-bar--linkbar--ZGZxf,
   .instructor-wrapper .instructor__tab-container {
-    background-color: #29303b !important;
+    background-color: var(--udem-darkblue-bg-color) !important;
   }
 
+  /*PRIMARY FONT COLOR*/
+  .quick-view-box--objective-text--1ro4W,
+  .curriculum-wrapper .lecture-container .title,
+  .form-control::placeholder,
+  .c_header .mylearning__item a:hover .metadata__title,
+  .c_header .dropdown--mylearning .metadata__instructor,
+  .c_header .menu__link a:not(.btn),
+  .instructor-profile--title--1rlDt a:hover,
+  a:hover,
+  .item-link--default-theme--YqsPR:hover,
+  pre.prettyprinted .pln,
+  pre.prettyprinted .pun,
+  pre.prettyprinted .opn,
+  pre.prettyprinted .clo {
+    color: var(--primary-font-color) !important;
+  }
+
+  .curriculum-wrapper .lecture-container.lecture-container--preview .title a {
+    color: var(--primary-font-color) !important;
+    font-weight: 700 !important;
+  }
+
+  /*SECONDARY FONT COLOR*/
   .unit-title--title-box--3tVMv h2,
   .skills-hub-unit-desktop--skill-link--3SpB6.skills-hub-unit-desktop--is-active--3ql8W,
   .btn-link:hover,
@@ -336,30 +353,13 @@ body.dark_mode_on {
   .base-thread-item--message-thread__user-title--9yeq- {
     color: var(--secondary-font-color) !important;
   }
+
+  /*SUCCESS COLOR*/
   pre.prettyprinted .lit {
-    color: yellow;
-  }
-  .quick-view-box--objective-text--1ro4W,
-  .curriculum-wrapper .lecture-container .title,
-  .form-control::placeholder,
-  .c_header .mylearning__item a:hover .metadata__title,
-  .c_header .dropdown--mylearning .metadata__instructor,
-  .c_header .menu__link a:not(.btn),
-  .instructor-profile--title--1rlDt a:hover,
-  a:hover,
-  .item-link--default-theme--YqsPR:hover,
-  pre.prettyprinted .pln,
-  pre.prettyprinted .pun,
-  pre.prettyprinted .opn,
-  pre.prettyprinted .clo {
-    color: var(--primary-font-color) !important;
+    color: var(--success-font-color);
   }
 
-  .curriculum-wrapper .lecture-container.lecture-container--preview .title a {
-    color: var(--primary-font-color) !important;
-    font-weight: 700 !important;
-  }
-
+  /*SECONDARY BG FONT COLOR*/
   .badge .badge-text,
   .smart-bar--smart-bar--1rOkE,
   .smart-bar-timer--timer-container--2mwOn span,
@@ -370,10 +370,12 @@ body.dark_mode_on {
     color: var(--secondary-bg-color) !important;
   }
 
+  /*INITAL BACKGROUND*/
   .c_header .dropdown--topics .dropdown-menu__list > li.maintain-hover > a {
     background: initial;
   }
 
+  /*LINEAR BACKGROUND*/
   .instructor--instructor--2qudS
     .instructor--instructor__view-more-wrapper--w6L78,
   .view-more-container--view-more__button-container--gradient--CmaZZ,
@@ -384,28 +386,54 @@ body.dark_mode_on {
       #2a2a2a
     );
   }
-  .c_header .dropdown--open-on-hover .dropdown-menu:before {
-    border-color: transparent transparent var(--secondary-bg-color) transparent !important;
+
+  /*BORDER*/
+  .btn-quaternary {
+    border: 1px solid var(--secondary-font-color);
   }
-  .instructor-response--arrow--1Qcf6:after {
-    border-bottom-color: var(--light-grey-bg-color) !important;
+
+  .btn-quaternary:hover,
+  .btn-quaternary:focus {
+    border: 1px solid var(--primary-font-color);
   }
-  .sidebar--header--1C0Qx,
-  .sidebar--content---4z0-,
-  .base-thread-item--message-thread__container--2sOg4 {
-    border: none;
-  }
-  .app--sidebar-column--2t0E8 {
-    border-left: 1px solid var(--light-grey-bg-color);
-  }
-  .section--section--BukKG,
-  .link-bar--linkbar--ZGZxf {
-    border-bottom: 1px solid var(--light-grey-bg-color);
+
+  .container--light-grey,
+  .footer__inst-banner {
+    border-top: 1px solid var(--primary-font-color);
   }
 
   .question-list-question--question-wrapper--3qHzn,
   .question-list--load-more--3LTv6,
   .course-overview--grid-row--1nKqQ {
     border-top: 1px solid var(--light-grey-bg-color);
+  }
+
+  .section--section--BukKG,
+  .link-bar--linkbar--ZGZxf {
+    border-bottom: 1px solid var(--light-grey-bg-color);
+  }
+
+  .app--sidebar-column--2t0E8 {
+    border-left: 1px solid var(--light-grey-bg-color);
+  }
+
+  .c_header .dropdown--open-on-hover .dropdown-menu::after,
+  .c_header .dropdown--open-on-hover .dropdown-menu::before {
+    border-color: transparent transparent var(--secondary-font-color)
+      transparent;
+  }
+
+  .c_header .dropdown--open-on-hover .dropdown-menu:before {
+    border-color: transparent transparent var(--secondary-bg-color) transparent !important;
+  }
+
+  .instructor-response--arrow--1Qcf6:after {
+    border-bottom-color: var(--light-grey-bg-color) !important;
+  }
+
+  .sidebar--header--1C0Qx,
+  .sidebar--content---4z0-,
+  .base-thread-item--message-thread__container--2sOg4 {
+    border: none;
   }
 }

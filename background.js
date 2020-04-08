@@ -3,9 +3,12 @@ chrome.runtime.onInstalled.addListener(function () {
   const defaultsColors = [
     { color: "#121212", name: "--primary-bg-color" },
     { color: "#2a2a2a", name: "--secondary-bg-color" },
-    { color: "#4e4949", name: "--light-grey-bg-color" },
+    { color: "#4e4949", name: "--light-bg-color" },
+    { color: "#736868", name: "--very-light-bg-color" },
+    { color: "#29303b", name: "--udemy-darkblue-bg-color" },
     { color: "#dcc2c2", name: "--primary-font-color" },
     { color: "#ffffff", name: "--secondary-font-color" },
+    { color: "#ffff00", name: "--success-font-color" },
   ];
   chrome.storage.sync.set({ colors: defaultsColors }, function () {
     console.log("The colors are set.");
