@@ -28,7 +28,7 @@
       "matches": ["https://www.udemy.com/*"],
       "css": ["css/style.min.css"],
       "js": ["content.js"],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     }
   ],
   "manifest_version": 2

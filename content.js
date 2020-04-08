@@ -1,13 +1,26 @@
-chrome.storage.sync.get("udemy_dark_mode", function(result) {
+chrome.storage.local.get("udemy_dark_mode", function (result) {
   if (result.udemy_dark_mode) {
-    console.log(result.udemy_dark_mode);
-    chrome.storage.sync.get(["colors"], function(data) {
+    document.body.classList.remove("dark_mode_off");
+    chrome.storage.sync.get(["colors"], function (data) {
       let colors = data.colors;
-      console.log(colors);
-      colors.forEach(el => {
+      colors.forEach((el) => {
         document.documentElement.style.setProperty(el.name, el.color);
       });
       document.body.classList.add("dark_mode_on");
+      const logo = document.querySelector('[data-purpose="udemy-brand-logo"]');
+      if (logo !== null) {
+        console.log("ok");
+        logo.src =
+          "https://www.udemy.com/staticx/udemy/images/v6/logo-coral-light.svg";
+      }
     });
+  } else {
+    document.body.classList.remove("dark_mode_on");
+    document.body.classList.add("dark_mode_off");
+    const logo = document.querySelector('[data-purpose="udemy-brand-logo"]');
+    if (logo !== null) {
+      console.log("ok");
+      logo.src = "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg";
+    }
   }
 });
