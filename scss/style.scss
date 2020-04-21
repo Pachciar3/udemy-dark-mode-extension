@@ -19,19 +19,8 @@ body:not(.dark_mode_off) {
   }
 }
 
-:root {
-  --primary-bg-color: #121212;
-  --secondary-bg-color: #2a2a2a;
-  --light-bg-color: #4e4949;
-  --very-light-bg-color: #736868;
-  --udemy-darkblue-bg-color: #29303b;
-  --primary-font-color: #dcc2c2;
-  --secondary-font-color: #ffffff;
-  --success-font-color: #ffff00;
-}
-
 /*SLOW STYLES*/
-body.dark_mode_on {
+html body.dark_mode_on {
   background-color: var(--primary-bg-color) !important;
   color: var(--primary-font-color);
 
@@ -45,7 +34,7 @@ body.dark_mode_on {
   .sidebar-notice--container--1pToS,
   .topic-menu,
   .search-result-page--search-result-container--1QJaS,
-  .footer__inst-banner,
+  .footer-v6 .footer__inst-banner,
   .styles--sc-wrapper--3ncS2,
   .styles--cart-success-modal__modal-body--2X5ro,
   .styles--sc-wrapper--3ncS2 .styles--sc-checkout-pane--71SP_,
@@ -57,8 +46,9 @@ body.dark_mode_on {
   .main-route--user-messaging__right--27tZ-,
   .message-list--message-thread__messages--24cVD,
   .reply-form--message-thread__new--d9LHV,
-  .reply-form--message-thread__new--d9LHV form {
-    background-color: var(--primary-bg-color);
+  .reply-form--message-thread__new--d9LHV form,
+  .text-viewer--scroll-container--1iy0Z {
+    background-color: var(--primary-bg-color) !important;
     color: var(--primary-font-color);
   }
 
@@ -137,7 +127,8 @@ body.dark_mode_on {
   .popover--popover--1sy7H,
   .popover--popover--click--3nXVQ,
   .comment--comment--160e1,
-  .main-route--user-messaging--3ak_b {
+  .main-route--user-messaging--3ak_b,
+  .curriculum-item-footer--footer--Rin15 {
     background-color: var(--secondary-bg-color) !important;
     color: var(--primary-font-color) !important;
   }
@@ -238,7 +229,7 @@ body.dark_mode_on {
   .instructor-wrapper .instructor__tab-container.container--light-grey,
   .link-bar--linkbar--ZGZxf,
   .instructor-wrapper .instructor__tab-container {
-    background-color: var(--udem-darkblue-bg-color) !important;
+    background-color: var(--udemy-darkblue-bg-color) !important;
   }
 
   /*PRIMARY FONT COLOR*/
@@ -254,7 +245,15 @@ body.dark_mode_on {
   pre.prettyprinted .pln,
   pre.prettyprinted .pun,
   pre.prettyprinted .opn,
-  pre.prettyprinted .clo {
+  pre.prettyprinted .clo,
+  .curriculum-wrapper
+    .lecture-container.lecture-container--preview
+    .content-summary,
+  .curriculum-wrapper .lecture-container.lecture-container--preview .title,
+  .curriculum-wrapper
+    .lecture-container.lecture-container--preview
+    .preview-text,
+  .curriculum-wrapper .lecture-container.lecture-container--preview .udi {
     color: var(--primary-font-color) !important;
   }
 
@@ -388,52 +387,49 @@ body.dark_mode_on {
   }
 
   /*BORDER*/
+  .sidebar--header--1C0Qx,
+  .sidebar--content---4z0-,
+  .base-thread-item--message-thread__container--2sOg4,
+  .section--section--BukKG {
+    border: none;
+  }
   .btn-quaternary {
-    border: 1px solid var(--secondary-font-color);
+    border: 1px solid;
+    border-color: var(--secondary-font-color);
   }
 
   .btn-quaternary:hover,
   .btn-quaternary:focus {
-    border: 1px solid var(--primary-font-color);
+    border: 1px solid;
+    border-color: var(--primary-font-color);
   }
 
   .container--light-grey,
   .footer__inst-banner {
-    border-top: 1px solid var(--primary-font-color);
+    border-top: 1px solid;
+    border-top-color: var(--primary-font-color);
   }
 
   .question-list-question--question-wrapper--3qHzn,
   .question-list--load-more--3LTv6,
   .course-overview--grid-row--1nKqQ {
-    border-top: 1px solid var(--light-grey-bg-color);
+    border-top: 1px solid;
+    border-top-color: var(--light-bg-color);
   }
 
   .section--section--BukKG,
   .link-bar--linkbar--ZGZxf {
-    border-bottom: 1px solid var(--light-grey-bg-color);
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: var(--light-bg-color) !important;
   }
 
   .app--sidebar-column--2t0E8 {
-    border-left: 1px solid var(--light-grey-bg-color);
-  }
-
-  .c_header .dropdown--open-on-hover .dropdown-menu::after,
-  .c_header .dropdown--open-on-hover .dropdown-menu::before {
-    border-color: transparent transparent var(--secondary-font-color)
-      transparent;
-  }
-
-  .c_header .dropdown--open-on-hover .dropdown-menu:before {
-    border-color: transparent transparent var(--secondary-bg-color) transparent !important;
+    border-left: 1px solid;
+    border-left-color: var(--light-bg-color);
   }
 
   .instructor-response--arrow--1Qcf6:after {
-    border-bottom-color: var(--light-grey-bg-color) !important;
-  }
-
-  .sidebar--header--1C0Qx,
-  .sidebar--content---4z0-,
-  .base-thread-item--message-thread__container--2sOg4 {
-    border: none;
+    border-bottom-color: var(--light-bg-color) !important;
   }
 }

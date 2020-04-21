@@ -1,9 +1,10 @@
 let page = document.getElementById("buttonDiv");
-chrome.storage.sync.get(["colors"], result => {
+chrome.storage.sync.get(["colors"], (result) => {
   let defaultColors = result.colors;
   let temporaryColors = defaultColors.filter(() => true);
   const searchName = "slidetoggle";
-  const constructOptions = colors => {
+  const reg = new RegExp("[#]{1}[0-9a-fA-F]{6}");
+  const constructOptions = (colors) => {
     //Functions for collapsing
     const hide = (el, box) => {
       el.parentNode.classList.remove("is-active");
@@ -19,7 +20,7 @@ chrome.storage.sync.get(["colors"], result => {
     const hideAll = () => {
       document
         .querySelectorAll(".is-active [data-" + searchName + "]")
-        .forEach(el => {
+        .forEach((el) => {
           const box = document.getElementById(
             el.getAttribute("data-" + searchName)
           );
@@ -28,17 +29,22 @@ chrome.storage.sync.get(["colors"], result => {
     };
     //Handle tmp colors
     const handletemporaryColors = (index, value, option, type) => {
-      const tmpinputsID = inputsID.filter(id => id !== type);
+      const tmpinputsID = inputsID.filter((id) => id !== type);
       temporaryColors[index] = {
         name: defaultColors[index].name,
-        color: value
+        color: value,
       };
 
-      tmpinputsID.forEach(el => {
+      tmpinputsID.forEach((el) => {
         if (el === "color-text") {
           option.querySelector("#" + el).value = value.slice(1, 7);
         } else {
-          option.querySelector("#" + el).value = value;
+          const foo = option.querySelector("#" + el);
+          if (reg.test(value)) {
+            foo.value = value;
+          } else {
+            foo.value = "#000000";
+          }
         }
       });
     };
@@ -65,7 +71,7 @@ chrome.storage.sync.get(["colors"], result => {
       button.setAttribute("aria-controls", `box${index}`);
       button.setAttribute("aria-expanded", false);
       button.innerHTML = color.name + arrowIcon;
-      button.addEventListener("click", function() {
+      button.addEventListener("click", function () {
         const scrollHeight = form.scrollHeight;
         if (button.parentNode.classList.contains("is-active")) {
           hide(button, form);
@@ -78,16 +84,15 @@ chrome.storage.sync.get(["colors"], result => {
       //Attributes for form
       form.className = "option__collapse";
       form.id = `box${index}`;
-      form.addEventListener("submit", e => {
+      form.addEventListener("submit", (e) => {
         e.preventDefault();
-        const reg = new RegExp("[#]{1}[0-9a-fA-F]{6}");
         const infoBox = form.querySelector(".option__info");
         infoBox.innerHTML = "";
         if (reg.test(temporaryColors[index].color)) {
           const newcolors = [...defaultColors];
-          console.log(defaultColors[index], temporaryColors[index]);
           newcolors[index] = temporaryColors[index];
           chrome.storage.sync.set({ colors: newcolors }, () => {
+            defaultColors = [...newcolors];
             infoBox.className = "option__info option__info--success";
             infoBox.innerHTML = "Saved!";
           });
@@ -146,11 +151,11 @@ chrome.storage.sync.get(["colors"], result => {
       option.appendChild(form);
       page.appendChild(option);
       const colorText = option.querySelector("#" + inputsID[0]);
-      colorText.addEventListener("input", e => {
+      colorText.addEventListener("input", (e) => {
         handletemporaryColors(index, "#" + e.target.value, option, inputsID[0]);
       });
       const colorPicker = option.querySelector("#" + inputsID[1]);
-      colorPicker.addEventListener("input", e => {
+      colorPicker.addEventListener("input", (e) => {
         handletemporaryColors(index, e.target.value, option, inputsID[1]);
       });
     });

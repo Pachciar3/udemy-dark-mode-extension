@@ -6,7 +6,6 @@ document.getElementById("options-page").addEventListener("click", () => {
 
 chrome.storage.local.get("udemy_dark_mode", function (data) {
   changeColor.checked = data.udemy_dark_mode;
-  console.log(data);
 });
 
 document.querySelectorAll("a").forEach((item) => {

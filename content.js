@@ -9,7 +9,6 @@ chrome.storage.local.get("udemy_dark_mode", function (result) {
       document.body.classList.add("dark_mode_on");
       const logo = document.querySelector('[data-purpose="udemy-brand-logo"]');
       if (logo !== null) {
-        console.log("ok");
         logo.src =
           "https://www.udemy.com/staticx/udemy/images/v6/logo-coral-light.svg";
       }
@@ -19,7 +18,6 @@ chrome.storage.local.get("udemy_dark_mode", function (result) {
     document.body.classList.add("dark_mode_off");
     const logo = document.querySelector('[data-purpose="udemy-brand-logo"]');
     if (logo !== null) {
-      console.log("ok");
       logo.src = "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg";
     }
   }
