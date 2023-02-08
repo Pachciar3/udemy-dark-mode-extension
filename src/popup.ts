@@ -24,8 +24,10 @@ changeColor.onclick = function () {
         chrome.tabs.query(
           { active: true, currentWindow: true },
           function (tabs) {
-            chrome.tabs.executeScript(tabs[0].id, {
-              file: 'content.js',
+            console.log(tabs);
+            chrome.scripting.executeScript({
+              target: { tabId: tabs[0].id },
+              files: ['content.js'],
             });
           },
         );
@@ -35,8 +37,22 @@ changeColor.onclick = function () {
         chrome.tabs.query(
           { active: true, currentWindow: true },
           function (tabs) {
-            chrome.tabs.executeScript(tabs[0].id, {
-              code: "document.body.classList.remove('dark_mode_on');document.body.classList.add('dark_mode_off'); document.querySelector(`[data-purpose='udemy-brand-logo']`).src ='https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg';",
+            console.log(tabs);
+            chrome.scripting.executeScript({
+              target: { tabId: tabs[0].id },
+              files: ['content_scripts/cscript.js'],
+            });
+            chrome.scripting.executeScript({
+              target: { tabId: tabs[0].id },
+              func: () => {
+                document.body.classList.remove('dark_mode_on');
+                document.body.classList.add('dark_mode_off');
+                const logo: HTMLImageElement = document.querySelector(
+                  `[data-purpose='udemy-brand-logo']`,
+                );
+                logo.src =
+                  'https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg';
+              },
             });
           },
         );
