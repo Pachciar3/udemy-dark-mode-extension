@@ -104,7 +104,9 @@ html body.dark_mode_on {
   #edit-template .form-wrapper,
   .checkbox:not(.checkbox-slide):not(.checkbox-button).boxed:not(.disabled)
     > label:hover,
-  .checkbox-inline:not(.checkbox-slide):not(.checkbox-button).boxed:not(.disabled)
+  .checkbox-inline:not(.checkbox-slide):not(.checkbox-button).boxed:not(
+      .disabled
+    )
     > label:hover,
   .instructor-wrapper .instructor__profile,
   .bg-white,
@@ -191,16 +193,16 @@ html body.dark_mode_on {
   .btn-quintinary:hover,
   .lecture-bookmark-v2--content-container--2f_Tg,
   .checkbox:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:before,
   .checkbox-inline:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:before,
   .checkbox:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:after,
   .checkbox-inline:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:after {
     background-color: var(--light-bg-color) !important;
     color: var(--secondary-font-color) !important;
