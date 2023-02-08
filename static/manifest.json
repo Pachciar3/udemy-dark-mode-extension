@@ -25,7 +25,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.udemy.com/*"],
-      "css": ["styles/serviceWorker.css"],
+      "css": ["styles/background.css"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
