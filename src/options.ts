@@ -1,5 +1,3 @@
-import '../styles/options.scss';
-
 import { hide, show, hideAllOptions, Color } from './utils';
 
 const optionsDiv: HTMLElement = document.getElementById('optionsDiv');

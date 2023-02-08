@@ -1,5 +1,3 @@
-import '../styles/popup.scss';
-
 const changeColor = document.getElementById('changeColor') as HTMLInputElement;
 
 document.getElementById('options-page').addEventListener('click', () => {
