@@ -1,48 +1,21 @@
 import '../styles/options.scss';
 
-interface Color {
-  name: string;
-  color: string;
-}
+import { hide, show, hideAllOptions, Color } from './utils';
 
-const page = document.getElementById('buttonDiv');
+const optionsDiv: HTMLElement = document.getElementById('optionsDiv');
+const arrowIcon =
+  '<svg class="question-answer__arrow-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>';
+const inputsID = ['color-text', 'color-picker'];
+const searchName = 'slidetoggle';
+const colorRegExp = new RegExp('[#]{1}[0-9a-fA-F]{6}');
+
 chrome.storage.sync.get(
   ['colors'],
   (result: { colors: Color[]; udemy_dark_mode: boolean }) => {
     let defaultColors = result.colors;
     const temporaryColors = defaultColors.filter(() => true);
-    const searchName = 'slidetoggle';
-    const reg = new RegExp('[#]{1}[0-9a-fA-F]{6}');
 
     const constructOptions = (colors: Color[]) => {
-      //Functions for collapsing
-      const hide = (el: Element, box: HTMLElement) => {
-        (<Element>el.parentNode).classList.remove('is-active');
-        el.setAttribute('aria-expanded', 'false');
-        box.style.height = '0px';
-      };
-
-      const show = (
-        el: HTMLElement,
-        box: HTMLElement,
-        scrollHeight: number,
-      ) => {
-        (<Element>el.parentNode).classList.add('is-active');
-        el.setAttribute('aria-expanded', 'true');
-        box.style.height = `${scrollHeight}px`;
-      };
-
-      const hideAll = () => {
-        document
-          .querySelectorAll('.is-active [data-' + searchName + ']')
-          .forEach((el) => {
-            const box = document.getElementById(
-              el.getAttribute('data-' + searchName),
-            );
-            hide(el, box);
-          });
-      };
-
       //Handle tmp colors
       const handleTemporaryColors = (
         index: number,
@@ -64,7 +37,7 @@ chrome.storage.sync.get(
             const optionElement: HTMLOptionElement = option.querySelector(
               '#' + elName,
             );
-            if (reg.test(value)) {
+            if (colorRegExp.test(value)) {
               optionElement.value = value;
             } else {
               optionElement.value = '#000000';
@@ -72,11 +45,6 @@ chrome.storage.sync.get(
           }
         });
       };
-
-      //Constants
-      const arrowIcon =
-        '<svg class="question-answer__arrow-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>';
-      const inputsID = ['color-text', 'color-picker'];
 
       colors.forEach((color: Color, index: number) => {
         //Initialization main elements
@@ -91,7 +59,7 @@ chrome.storage.sync.get(
 
         //Attributes for button
         button.className = buttonClassName;
-        button.dataset.slidetoggle = `box${index}`;
+        button.dataset[searchName] = `box${index}`;
         button.setAttribute('aria-controls', `box${index}`);
         button.setAttribute('aria-expanded', 'false');
         button.innerHTML = color.name + arrowIcon;
@@ -100,7 +68,7 @@ chrome.storage.sync.get(
           if ((<Element>button.parentNode).classList.contains('is-active')) {
             hide(button, form);
           } else {
-            hideAll();
+            hideAllOptions(searchName);
             show(button, form, scrollHeight);
           }
         });
@@ -112,7 +80,7 @@ chrome.storage.sync.get(
           e.preventDefault();
           const infoBox = form.querySelector('.option__info');
           infoBox.innerHTML = '';
-          if (reg.test(temporaryColors[index].color)) {
+          if (colorRegExp.test(temporaryColors[index].color)) {
             const newColors = [...defaultColors];
             newColors[index] = temporaryColors[index];
             chrome.storage.sync.set({ colors: newColors }, () => {
@@ -173,7 +141,8 @@ chrome.storage.sync.get(
         //Append to DOM
         option.appendChild(button);
         option.appendChild(form);
-        page.appendChild(option);
+        optionsDiv.appendChild(option);
+
         const colorText = option.querySelector('#' + inputsID[0]);
         colorText.addEventListener('input', (e: InputEvent) => {
           handleTemporaryColors(
