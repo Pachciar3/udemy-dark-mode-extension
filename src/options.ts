@@ -6,22 +6,23 @@ interface Color {
 }
 
 const page = document.getElementById('buttonDiv');
-chrome.storage.sync.get(['colors'], (result) => {
+chrome.storage.sync.get(['colors'], (result: { colors: Color[] }) => {
   let defaultColors = result.colors;
   const temporaryColors = defaultColors.filter(() => true);
   const searchName = 'slidetoggle';
   const reg = new RegExp('[#]{1}[0-9a-fA-F]{6}');
+
   const constructOptions = (colors: Color[]) => {
     //Functions for collapsing
-    const hide = (el, box: HTMLElement) => {
-      el.parentNode.classList.remove('is-active');
-      el.setAttribute('aria-expanded', false);
+    const hide = (el: Element, box: HTMLElement) => {
+      (<Element>el.parentNode).classList.remove('is-active');
+      el.setAttribute('aria-expanded', 'false');
       box.style.height = '0px';
     };
 
-    const show = (el, box, scrollHeight) => {
-      el.parentNode.classList.add('is-active');
-      el.setAttribute('aria-expanded', true);
+    const show = (el: HTMLElement, box: HTMLElement, scrollHeight: number) => {
+      (<Element>el.parentNode).classList.add('is-active');
+      el.setAttribute('aria-expanded', 'true');
       box.style.height = `${scrollHeight}px`;
     };
     const hideAll = () => {
@@ -31,14 +32,14 @@ chrome.storage.sync.get(['colors'], (result) => {
           const box = document.getElementById(
             el.getAttribute('data-' + searchName),
           );
-          hide(el as HTMLElement, box);
+          hide(el, box);
         });
     };
     //Handle tmp colors
     const handleTemporaryColors = (
       index: number,
       value: string,
-      option: HTMLInputElement,
+      option: HTMLDivElement,
       type: string,
     ) => {
       const tmpinputsID = inputsID.filter((id) => id !== type);
@@ -47,15 +48,18 @@ chrome.storage.sync.get(['colors'], (result) => {
         color: value,
       };
 
-      tmpinputsID.forEach((el) => {
-        if (el === 'color-text') {
-          option.querySelector('#' + el).value = value.slice(1, 7);
+      tmpinputsID.forEach((elName: string) => {
+        if (elName === 'color-text') {
+          (<HTMLOptionElement>option.querySelector('#' + elName)).value =
+            value.slice(1, 7);
         } else {
-          const foo = option.querySelector('#' + el);
+          const optionElement: HTMLOptionElement = option.querySelector(
+            '#' + elName,
+          );
           if (reg.test(value)) {
-            foo.value = value;
+            optionElement.value = value;
           } else {
-            foo.value = '#000000';
+            optionElement.value = '#000000';
           }
         }
       });
@@ -81,11 +85,11 @@ chrome.storage.sync.get(['colors'], (result) => {
       button.className = buttonClassName;
       button.dataset.slidetoggle = `box${index}`;
       button.setAttribute('aria-controls', `box${index}`);
-      button.setAttribute('aria-expanded', false);
+      button.setAttribute('aria-expanded', 'false');
       button.innerHTML = color.name + arrowIcon;
       button.addEventListener('click', function () {
         const scrollHeight = form.scrollHeight;
-        if (button.parentNode.classList.contains('is-active')) {
+        if ((<Element>button.parentNode).classList.contains('is-active')) {
           hide(button, form);
         } else {
           hideAll();
@@ -101,10 +105,10 @@ chrome.storage.sync.get(['colors'], (result) => {
         const infoBox = form.querySelector('.option__info');
         infoBox.innerHTML = '';
         if (reg.test(temporaryColors[index].color)) {
-          const newcolors = [...defaultColors];
-          newcolors[index] = temporaryColors[index];
-          chrome.storage.sync.set({ colors: newcolors }, () => {
-            defaultColors = [...newcolors];
+          const newColors = [...defaultColors];
+          newColors[index] = temporaryColors[index];
+          chrome.storage.sync.set({ colors: newColors }, () => {
+            defaultColors = [...newColors];
             infoBox.className = 'option__info option__info--success';
             infoBox.innerHTML = 'Saved!';
           });
@@ -163,12 +167,22 @@ chrome.storage.sync.get(['colors'], (result) => {
       option.appendChild(form);
       page.appendChild(option);
       const colorText = option.querySelector('#' + inputsID[0]);
-      colorText.addEventListener('input', (e) => {
-        handleTemporaryColors(index, '#' + e.target.value, option, inputsID[0]);
+      colorText.addEventListener('input', (e: InputEvent) => {
+        handleTemporaryColors(
+          index,
+          '#' + (<HTMLInputElement>e.target).value,
+          option,
+          inputsID[0],
+        );
       });
       const colorPicker = option.querySelector('#' + inputsID[1]);
-      colorPicker.addEventListener('input', (e) => {
-        handleTemporaryColors(index, e.target.value, option, inputsID[1]);
+      colorPicker.addEventListener('input', (e: InputEvent) => {
+        handleTemporaryColors(
+          index,
+          (<HTMLInputElement>e.target).value,
+          option,
+          inputsID[1],
+        );
       });
     });
   };
