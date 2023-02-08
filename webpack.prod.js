@@ -12,7 +12,7 @@ module.exports = merge(common, {
           archive: [
             {
               source: './dist',
-              destination: './build-zip/udemy-dark-theme.zip',
+              destination: 'build/udemy-dark-theme.zip',
             },
           ],
         },
