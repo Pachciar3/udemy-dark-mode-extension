@@ -16,9 +16,6 @@ chrome.runtime.onInstalled.addListener(function () {
   chrome.storage.local.set({ udemy_dark_mode: true }, () => {
     console.log('Udemy dark mode is true.');
   });
-  chrome.storage.sync.set({ color: '#3aa757' }, function () {
-    console.log('The color is green.');
-  });
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
     chrome.declarativeContent.onPageChanged.addRules([
       {
