@@ -13,6 +13,8 @@
     "webextensions": true
   },
   "rules": {
-    "@typescript-eslint/no-var-requires": 0
+    "@typescript-eslint/no-var-requires": 0,
+    "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
+    "max-lines": ["warn", 300]
   }
 }

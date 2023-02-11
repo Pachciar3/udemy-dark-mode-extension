@@ -3,20 +3,21 @@ export interface Color {
   color: string;
 }
 
+export interface Result {
+  colors: Color[];
+  udemy_dark_mode: boolean;
+}
+
 export const hide = (el: HTMLElement, box: HTMLElement) => {
   (<Element>el.parentNode).classList.remove('is-active');
   el.setAttribute('aria-expanded', 'false');
   box.style.height = '0px';
 };
 
-export const show = (
-  el: HTMLElement,
-  box: HTMLElement,
-  scrollHeight: number,
-) => {
+export const show = (el: HTMLElement, box: HTMLElement) => {
   (<Element>el.parentNode).classList.add('is-active');
   el.setAttribute('aria-expanded', 'true');
-  box.style.height = `${scrollHeight}px`;
+  box.style.height = `${box.scrollHeight}px`;
 };
 
 export const hideAllOptions = (searchName: string) => {

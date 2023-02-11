@@ -22,7 +22,6 @@ changeColor.onclick = function () {
         chrome.tabs.query(
           { active: true, currentWindow: true },
           function (tabs) {
-            console.log(tabs);
             chrome.scripting.executeScript({
               target: { tabId: tabs[0].id },
               files: ['content.js'],
@@ -35,7 +34,6 @@ changeColor.onclick = function () {
         chrome.tabs.query(
           { active: true, currentWindow: true },
           function (tabs) {
-            console.log(tabs);
             chrome.scripting.executeScript({
               target: { tabId: tabs[0].id },
               files: ['content_scripts/cscript.js'],

@@ -11,10 +11,10 @@ chrome.runtime.onInstalled.addListener(function () {
     { color: '#ffff00', name: '--success-font-color' },
   ];
   chrome.storage.sync.set({ colors: defaultsColors }, function () {
-    console.log('The colors are set.');
+    console.info('The colors are set.');
   });
   chrome.storage.local.set({ udemy_dark_mode: true }, () => {
-    console.log('Udemy dark mode is true.');
+    console.info('Udemy dark mode is set to true.');
   });
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
     chrome.declarativeContent.onPageChanged.addRules([

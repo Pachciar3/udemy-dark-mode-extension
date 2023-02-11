@@ -24,6 +24,12 @@ body {
   margin: 0px auto 0px;
   max-width: 800px;
   padding: 20px;
+
+  &__list:has(.loader) {
+    text-align: center;
+    padding: 60px 0px;
+  }
+
   &__title {
     font-size: 25px;
     margin-bottom: 20px;
@@ -136,5 +142,26 @@ body {
     &:hover {
       color: yellow;
     }
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  color: transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

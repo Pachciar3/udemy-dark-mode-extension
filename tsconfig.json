@@ -2,9 +2,12 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
+    "noImplicitThis": true,
     "module": "es6",
     "target": "es5",
     "allowJs": true,
     "moduleResolution": "node"
+    // "strictNullChecks": true,
+    // "strict": true
   }
 }
