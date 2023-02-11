@@ -14,6 +14,7 @@ body:not(.dark_mode_off) {
   }
   .footer__inst-banner,
   .sidebar--content---4z0-,
+  .sidebar--sidebar-header--3RQk_,
   .main-route--user-messaging__right--27tZ- {
     background-color: #121212;
   }
@@ -104,7 +105,9 @@ html body.dark_mode_on {
   #edit-template .form-wrapper,
   .checkbox:not(.checkbox-slide):not(.checkbox-button).boxed:not(.disabled)
     > label:hover,
-  .checkbox-inline:not(.checkbox-slide):not(.checkbox-button).boxed:not(.disabled)
+  .checkbox-inline:not(.checkbox-slide):not(.checkbox-button).boxed:not(
+      .disabled
+    )
     > label:hover,
   .instructor-wrapper .instructor__profile,
   .bg-white,
@@ -128,7 +131,10 @@ html body.dark_mode_on {
   .popover--popover--click--3nXVQ,
   .comment--comment--160e1,
   .main-route--user-messaging--3ak_b,
-  .curriculum-item-footer--footer--Rin15 {
+  .curriculum-item-footer--footer--Rin15,
+  .section--section--BukKG .ud-accordion-panel-toggler,
+  .alert-banner--alert-banner-information--2slx4,
+  .dropdown--dropdown-menu--2Lfsz {
     background-color: var(--secondary-bg-color) !important;
     color: var(--primary-font-color) !important;
   }
@@ -191,16 +197,16 @@ html body.dark_mode_on {
   .btn-quintinary:hover,
   .lecture-bookmark-v2--content-container--2f_Tg,
   .checkbox:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:before,
   .checkbox-inline:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:before,
   .checkbox:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:after,
   .checkbox-inline:not(.checkbox-slide):not(.checkbox-button)
-    input[type="checkbox"]:not(:checked)
+    input[type='checkbox']:not(:checked)
     + .checkbox-label:after {
     background-color: var(--light-bg-color) !important;
     color: var(--secondary-font-color) !important;
@@ -390,7 +396,9 @@ html body.dark_mode_on {
   .sidebar--header--1C0Qx,
   .sidebar--content---4z0-,
   .base-thread-item--message-thread__container--2sOg4,
-  .section--section--BukKG {
+  .section--section--BukKG,
+  .alert-banner--alert-banner-information--2slx4,
+  .sidebar--sidebar-header--3RQk_ {
     border: none;
   }
   .btn-quaternary {
