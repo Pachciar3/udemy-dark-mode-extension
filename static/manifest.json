@@ -1,6 +1,6 @@
 {
-  "name": "UDEMY DARK THEME",
-  "version": "1.1",
+  "name": "Udemy Dark Theme",
+  "version": "2.0",
   "description": "It is a dark theme for the udemy website",
   "permissions": ["activeTab", "declarativeContent", "storage", "scripting"],
   "options_page": "options.html",
@@ -24,7 +24,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.udemy.com/*"],
+      "matches": ["https://*.udemy.com/*"],
       "css": ["styles/background.css"],
       "js": ["content.js"],
       "run_at": "document_idle"

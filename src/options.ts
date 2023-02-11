@@ -43,12 +43,16 @@ const constructOptions = (colors: Color[], openedOptionName?: string) => {
     const form = createForm(index, color, colors, colorRegExp, inputsID);
     const option = createOption();
     const collapseButton = createCollapseButton(index, color, form);
-
+    if (color.name === openedOptionName) {
+      const infoBox = form.querySelector('.option__info');
+      infoBox.className = 'option__info option__info--success';
+      infoBox.textContent = 'Saved!';
+    }
     //Append to DOM
     option.appendChild(collapseButton);
     option.appendChild(form);
     optionsDiv.appendChild(option);
-    openedOptionName === color.name && show(collapseButton, form);
+    openedOptionName === color.name && show(collapseButton, form, true);
     const colorText = option.querySelector('#' + inputsID[0]);
     colorText.addEventListener('input', (e: InputEvent) => {
       handleTemporaryColorsInputs(

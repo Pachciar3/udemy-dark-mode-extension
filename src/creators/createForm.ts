@@ -20,11 +20,11 @@ export default function createForm(
         newColors[index] = colors[index];
         chrome.storage.sync.set({ colors: newColors }, () => {
           infoBox.className = 'option__info option__info--success';
-          infoBox.innerHTML = 'Saved!';
+          infoBox.textContent = 'Saved!';
         });
       } else {
         infoBox.className = 'option__info option__info--danger';
-        infoBox.innerHTML =
+        infoBox.textContent =
           'Error. The format is "rrggbb" where rr, gg, bb are two-digit hexadecimal numbers!';
       }
     }
