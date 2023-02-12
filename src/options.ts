@@ -7,7 +7,7 @@ const inputsID: [string, string] = ['color-text', 'color-picker'];
 
 const handleTemporaryColorsInputs = (
   index: number,
-  value: string,
+  value: Color['value'],
   option: HTMLDivElement,
   type: string,
   colors: Color[],
@@ -15,7 +15,7 @@ const handleTemporaryColorsInputs = (
   const tmpInputsID = inputsID.filter((id) => id !== type);
   colors[index] = {
     name: colors[index].name,
-    color: value,
+    value,
   };
 
   tmpInputsID.forEach((elName: string) => {
@@ -57,7 +57,7 @@ const constructOptions = (colors: Color[], openedOptionName?: string) => {
     colorText.addEventListener('input', (e: InputEvent) => {
       handleTemporaryColorsInputs(
         index,
-        '#' + (<HTMLInputElement>e.target).value,
+        ('#' + (<HTMLInputElement>e.target).value) as Color['value'],
         option,
         inputsID[0],
         colors,
@@ -67,7 +67,7 @@ const constructOptions = (colors: Color[], openedOptionName?: string) => {
     colorPicker.addEventListener('input', (e: InputEvent) => {
       handleTemporaryColorsInputs(
         index,
-        (<HTMLInputElement>e.target).value,
+        (<HTMLInputElement>e.target).value as Color['value'],
         option,
         inputsID[1],
         colors,
@@ -86,7 +86,7 @@ chrome.storage.onChanged.addListener((changes) => {
   const colors: undefined | { newValue?: Color[]; oldValue?: Color[] } =
     changes.colors;
   const difference = colors.newValue?.filter(
-    (x) => !colors?.oldValue?.filter((y) => y.color === x.color)[0],
+    (x) => !colors?.oldValue?.filter((y) => y.value === x.value)[0],
   )[0].name;
   colors?.newValue && constructOptions(colors?.newValue, difference);
 });

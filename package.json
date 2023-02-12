@@ -49,9 +49,10 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js}": [
-      "npm run prettier",
-      "npm run lint"
+    "./**/*.{js,ts,css,scss,md}": [
+      "yarn prettier",
+      "yarn lint",
+      "git add"
     ]
   }
 }

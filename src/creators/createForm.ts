@@ -15,7 +15,7 @@ export default function createForm(
     const infoBox = form.querySelector('.option__info');
     if (infoBox) {
       infoBox.innerHTML = '';
-      if (colorRegExp.test(colors[index].color)) {
+      if (colorRegExp.test(colors[index].value)) {
         const newColors = [...colors];
         newColors[index] = colors[index];
         chrome.storage.sync.set({ colors: newColors }, () => {
@@ -44,7 +44,7 @@ export default function createForm(
                 class="field__input"
                 id="${inputsID[0]}"
                 maxlength="6"
-                value="${color.color.slice(1, 7)}"
+                value="${color.value.slice(1, 7)}"
               />
             </div>
           </fieldset>
@@ -61,7 +61,7 @@ export default function createForm(
                 id="${inputsID[1]}"
                 name="Color Picker"
                 type="color"
-                value="${color.color}"
+                value="${color.value}"
               />
             </div>
           </fieldset>
