@@ -13,6 +13,8 @@ chrome.runtime.onInstalled.addListener(() => {
     { color: '#000000', name: '--secondary-font-color' },
     { color: '#ffffff', name: '--tertiary-font-color' },
     { color: '#ffff00', name: '--success-font-color' },
+
+    { color: '#777777', name: '--primary-border-color' },
   ];
   chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
     const rules = [
