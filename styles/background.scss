@@ -12,6 +12,10 @@ body:not(.dark_mode_off) {
 /*SLOW STYLES*/
 html body.dark_mode_on {
   background-color: var(--primary-bg-color) !important;
+  .styles--success-header--1zGG6,
+  .styles--success--24Rts {
+    background-color: var(--primary-bg-color) !important;
+  }
 
   .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
   .header--header--1SLKV,
@@ -27,7 +31,11 @@ html body.dark_mode_on {
   .ud-select option,
   .ud-btn-secondary,
   .ud-btn-secondary.ud-btn-disabled,
-  .modal--default-size--399MX {
+  .modal--default-size--399MX,
+  #tabs--1-content-0,
+  .my-courses__app .ud-tab-content,
+  .ud-btn-white-solid,
+  .ud-btn-white-solid.ud-btn-disabled {
     background-color: var(--secondary-bg-color) !important;
   }
   .popover--popover--Az__U,
@@ -41,12 +49,24 @@ html body.dark_mode_on {
   .curriculum-item-link--curriculum-item--KX9MD > .item-link,
   .section--panel--1zoAn .ud-accordion-panel-content,
   .dropdown--menu--38WE2 .ud-block-list,
-  .text-input-form--text-input-form--170x1 input {
+  .text-input-form--text-input-form--170x1 input,
+  .panel-menu--footer--sY39u,
+  .ud-avatar,
+  .options-menu--menu-heading--zKjVN,
+  .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A,
+  .alert-banner--alert-banner-success--kPw8D,
+  .ud-text-input-large,
+  .rt-menu-bar-container-sticky,
+  .rt-editor,
+  div.text-input-with-addons--addon--1dOJH {
     background-color: var(--tertiary-bg-color);
   }
+  .ud-btn-white-solid:hover,
+  .ud-btn-white-solid.ud-btn-disabled:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
 
-  .ud-btn-white-solid,
-  .ud-btn-white-solid.ud-btn-disabled {
+  .ud-btn-secondary {
     background-color: var(--primary-font-color);
   }
 
@@ -61,16 +81,21 @@ html body.dark_mode_on {
   .subcategory-link-bar--subcategory-link-bar--24CSR
     .subcategory-link-bar--subcategory--3tEKQ,
   .subcategory-link-bar--subcategory-link-bar--24CSR
-    .subcategory-link-bar--subcategory-in-dropdown--hdpz8 {
+    .subcategory-link-bar--subcategory-in-dropdown--hdpz8,
+  .shopping-item--container--XGMrp .shopping-item--course-title--1nay8 a {
     color: var(--primary-font-color);
   }
-  .smart-bar--smart-bar__title--1LFsk,
-  .ud-text-with-links,
-  .smart-bar--smart-bar-timer--Nvb_u span,
-  .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A h1,
-  .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A p,
+
   .ud-badge-hot-and-new,
-  .advertising-banner--submit-button--3ec33 span {
+  .hero-header--title---4jCL,
+  .hero-header--subtitle--athYy,
+  .hero-header--cta--3lLy8,
+  .from-instructors--quote--1tMSP,
+  .from-instructors--title--2wCfM,
+  .from-instructors--subtitle--3-zFG,
+  .hero-header--billboard-container--sYvLn > .teach-page__heading,
+  .teach-page__pale-container > .teach-page__container > .teach-page__heading,
+  .simple-cta--subtitle--VWykw {
     color: var(--secondary-font-color) !important;
   }
 
@@ -86,8 +111,13 @@ html body.dark_mode_on {
     .subcategory-link-bar--subcategory--3tEKQ:hover,
   .subcategory-link-bar--subcategory-link-bar--24CSR
     .subcategory-link-bar--subcategory-in-dropdown--hdpz8:hover,
-  .header--header--1SLKV .js-header-search-field::placeholder {
-    color: #a59898;
+  .header--header--1SLKV .js-header-search-field::placeholder,
+  .ud-btn-secondary:active,
+  .ud-btn-secondary:hover {
+    color: var(--hover-font-color);
+  }
+  .ud-footer .inverted-link {
+    color: #6e5cd7;
   }
 
   .single-course-unit--container--2D57g,
@@ -111,7 +141,18 @@ html body.dark_mode_on {
   .sidebar--content---4z0-,
   .ud-footer .language-selector-container .ud-btn,
   .ud-footer .language-selector-container .ud-icon,
-  .course-overview--grid-row--1nKqQ {
+  .course-overview--grid-row--1nKqQ,
+  .header--search-bar--1g81R:hover,
+  .options-menu--menu-container--5sOF- .ud-block-list + .ud-block-list,
+  .bundle-unit--bundle-border--31VCl,
+  .shopping-item--shopping-item-wrapper--387R- {
     border-color: var(--primary-border-color);
+  }
+  .ud-btn-white-solid,
+  .ud-btn-white-solid.ud-btn-disabled {
+    border: 1px solid var(--primary-border-color);
+  }
+  .popper--popper--1zOlT > button > svg > use {
+    fill: var(--primary-bg-color) !important;
   }
 }
