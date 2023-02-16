@@ -5,14 +5,11 @@ chrome.runtime.onInstalled.addListener(() => {
     { color: '#121212', name: '--primary-bg-color' },
     { color: '#1c1d1f', name: '--secondary-bg-color' },
     { color: '#2a2a2a', name: '--tertiary-bg-color' },
-    { color: '#4e4949', name: '--light-bg-color' },
-    { color: '#736868', name: '--very-light-bg-color' },
-    { color: '#29303b', name: '--udemy-darkblue-bg-color' },
 
     { color: '#dcc2c2', name: '--primary-font-color' },
     { color: '#000000', name: '--secondary-font-color' },
     { color: '#ffffff', name: '--tertiary-font-color' },
-    { color: '#ffff00', name: '--success-font-color' },
+    { color: '#a59898', name: '--hover-font-color' },
 
     { color: '#777777', name: '--primary-border-color' },
   ];
