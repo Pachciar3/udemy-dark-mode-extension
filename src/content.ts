@@ -16,6 +16,7 @@ chrome.storage.local.get('udemy_dark_mode', function (result) {
       if (logo && (<HTMLImageElement>logo).src) {
         (<HTMLImageElement>logo).src =
           'https://www.udemy.com/staticx/udemy/images/v6/logo-coral-light.svg';
+        // 'static/assets/logo-udemy_flipped.svg';
       }
     });
   } else {
