@@ -5,6 +5,7 @@ chrome.runtime.onInstalled.addListener(() => {
     { color: '#121212', name: '--primary-bg-color' },
     { color: '#1c1d1f', name: '--secondary-bg-color' },
     { color: '#2a2a2a', name: '--tertiary-bg-color' },
+    { color: '#3a3a3a', name: '--quarternary-bg-color' },
 
     { color: '#dcc2c2', name: '--primary-font-color' },
     { color: '#000000', name: '--secondary-font-color' },
