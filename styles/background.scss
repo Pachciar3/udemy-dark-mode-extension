@@ -1,22 +1,27 @@
 /*FAST STYLES*/
 body:not(.dark_mode_off) {
   background-color: #121212 !important;
+  color: #dcc2c2;
+
   .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
   .header--header--1SLKV,
   .sidebar--content---4z0- {
     background-color: #1c1d1f !important;
   }
-  color: #dcc2c2;
 }
 
 /*SLOW STYLES*/
 html body.dark_mode_on {
   background-color: var(--primary-bg-color) !important;
+
   .styles--success-header--1zGG6,
-  .styles--success--24Rts {
+  .styles--success--24Rts,
+  .profile-course-lists--no-tabs-content--2uXSX,
+  #content,
+  .header .tab-bar,
+  .hero-inner {
     background-color: var(--primary-bg-color) !important;
   }
-
   .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
   .header--header--1SLKV,
   .lecture-progress-card--lecture-progress-card--1LsBm:hover,
@@ -35,7 +40,21 @@ html body.dark_mode_on {
   #tabs--1-content-0,
   .my-courses__app .ud-tab-content,
   .ud-btn-white-solid,
-  .ud-btn-white-solid.ud-btn-disabled {
+  .ud-btn-white-solid.ud-btn-disabled,
+  .thread-list-toolbar--container--2xeoA,
+  .thread-list--thread-list-container--2HHnK,
+  .message-list--messages--1aHZj,
+  .message-list--messages--1aHZj .message-list--message--x6bsA,
+  .app--payment-method-settings-container--2nmSF
+    > .app--payment-settings-container--2e-w8
+    .app--payment-setting--checkbox--3DmID,
+  .home ul.faq-grid li .wrap,
+  .home ul.faq-ins li .wrap,
+  .home ul.topics-grid li .wrap,
+  .contact-tile .wrap,
+  .hero-inner .search input,
+  .ud-search-form-autocomplete
+    .ud-search-form-autocomplete-suggestions-with-image {
     background-color: var(--secondary-bg-color) !important;
   }
   .popover--popover--Az__U,
@@ -58,21 +77,27 @@ html body.dark_mode_on {
   .ud-text-input-large,
   .rt-menu-bar-container-sticky,
   .rt-editor,
-  div.text-input-with-addons--addon--1dOJH {
+  div.text-input-with-addons--addon--1dOJH,
+  .thread-list--thread--BXLgb:hover,
+  .thread-list--thread--BXLgb.thread-list--active--3aBTC {
     background-color: var(--tertiary-bg-color);
+  }
+  .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
+  .curriculum-item-link--curriculum-item--KX9MD.curriculum-item-link--is-current--31BPo
+    > .item-link {
+    background-color: var(--quarternary-bg-color);
   }
   .ud-btn-white-solid:hover,
   .ud-btn-white-solid.ud-btn-disabled:hover {
     background-color: rgba(255, 255, 255, 0.08) !important;
   }
-
+  .filter-container--loading-overlay--2Rm2K {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
   .ud-btn-secondary {
     background-color: var(--primary-font-color);
   }
 
-  .filter-container--loading-overlay--2Rm2K {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
   *,
   .item-card--item-card-title--_-dkH:hover,
   .course-card--container--1QM2W h3[data-purpose='course-title-url'] a,
@@ -82,10 +107,12 @@ html body.dark_mode_on {
     .subcategory-link-bar--subcategory--3tEKQ,
   .subcategory-link-bar--subcategory-link-bar--24CSR
     .subcategory-link-bar--subcategory-in-dropdown--hdpz8,
-  .shopping-item--container--XGMrp .shopping-item--course-title--1nay8 a {
-    color: var(--primary-font-color);
+  .shopping-item--container--XGMrp .shopping-item--course-title--1nay8 a,
+  .header .tab-bar a.back,
+  .header .language-selector .dropdown-toggle,
+  .home ul.tabs li.active a {
+    color: var(--primary-font-color) !important;
   }
-
   .ud-badge-hot-and-new,
   .hero-header--title---4jCL,
   .hero-header--subtitle--athYy,
@@ -95,10 +122,11 @@ html body.dark_mode_on {
   .from-instructors--subtitle--3-zFG,
   .hero-header--billboard-container--sYvLn > .teach-page__heading,
   .teach-page__pale-container > .teach-page__container > .teach-page__heading,
-  .simple-cta--subtitle--VWykw {
+  .simple-cta--subtitle--VWykw,
+  .ud-badge-highest-rated,
+  .ud-badge-new {
     color: var(--secondary-font-color) !important;
   }
-
   .header--dropdown-button--ht4OS:hover .header--dropdown-button-text--2OxOV,
   .header--dropdown-button--ht4OS:hover .ud-icon,
   .ud-popper-open .header--dropdown-button-text--2OxOV,
@@ -119,40 +147,32 @@ html body.dark_mode_on {
   .ud-footer .inverted-link {
     color: #6e5cd7;
   }
-
-  .single-course-unit--container--2D57g,
-  .single-course-unit--image-wrapper--1s6AR,
-  .subcategory-link-bar--subcategory-link-bar--24CSR,
-  .popular-topics-unit--topic-tag--3tYg-,
-  .alert-banner--alert-banner-information--2slx4,
-  .course-card--image-wrapper--1F9ny,
-  .advertising-banner--container--3HMEN,
-  .accordion-panel--panel--24beS,
-  .course-list--container--FuG0T > *:not(:last-child),
-  .ud-compact-form-control-container,
-  .ud-btn-secondary,
-  .ud-btn-secondary.ud-btn-disabled,
-  .lecture-progress-card--lecture-progress-card--1LsBm,
-  .ud-btn-white-outline,
-  .ud-btn-white-outline.ud-btn-disabled,
-  .link-bar--link-bar--NoEGM,
-  .dropdown--dropdown-menu--2Lfsz,
-  .sidebar--sidebar-header--3RQk_,
-  .sidebar--content---4z0-,
+  *,
+  .header--search-bar--1g81R:hover,
   .ud-footer .language-selector-container .ud-btn,
   .ud-footer .language-selector-container .ud-icon,
-  .course-overview--grid-row--1nKqQ,
-  .header--search-bar--1g81R:hover,
-  .options-menu--menu-container--5sOF- .ud-block-list + .ud-block-list,
-  .bundle-unit--bundle-border--31VCl,
-  .shopping-item--shopping-item-wrapper--387R- {
+  .course-landing-page_sidebar-container .intro-asset--img-aspect--3fbKk img,
+  .course-landing-page_sidebar-container .intro-asset--overlay--3jyau,
+  .section--panel--1zoAn .ud-accordion-panel-content,
+  .ud-search-form-autocomplete
+    .ud-search-form-autocomplete-suggestions-with-image,
+  .course-list--container--FuG0T > *:not(:last-child) {
     border-color: var(--primary-border-color);
   }
   .ud-btn-white-solid,
-  .ud-btn-white-solid.ud-btn-disabled {
+  .ud-btn-white-solid.ud-btn-disabled,
+  .popover--popover--Az__U {
     border: 1px solid var(--primary-border-color);
+    box-shadow: none;
   }
-  .popper--popper--1zOlT > button > svg > use {
-    fill: var(--primary-bg-color) !important;
+  .header--search-bar--1g81R {
+    border-color: transparent;
+  }
+
+  .ud-fake-toggle-checkbox use {
+    display: none;
+  }
+  .ud-real-toggle-input:checked ~ .ud-fake-toggle-checkbox use {
+    display: block !important;
   }
 }
