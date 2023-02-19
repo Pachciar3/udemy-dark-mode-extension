@@ -15,8 +15,7 @@ chrome.storage.local.get('udemy_dark_mode', function (result) {
 
       if (logo && (<HTMLImageElement>logo).src) {
         (<HTMLImageElement>logo).src =
-          'https://www.udemy.com/staticx/udemy/images/v6/logo-coral-light.svg';
-        // 'static/assets/logo-udemy_flipped.svg';
+          'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg';
       }
     });
   } else {
@@ -25,6 +24,7 @@ chrome.storage.local.get('udemy_dark_mode', function (result) {
     const logo = document.querySelector(
       '.header--flex-middle--2QeVR.header--logo--rd7-H img',
     );
+
     if (logo && (<HTMLImageElement>logo).src) {
       (<HTMLImageElement>logo).src =
         'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
