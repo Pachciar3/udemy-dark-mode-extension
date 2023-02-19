@@ -1,6 +1,6 @@
 export interface Color {
   name: string;
-  color: string;
+  value: `#${string}`;
 }
 
 export interface Result {

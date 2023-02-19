@@ -1,4 +1,5 @@
-//SCRIPT IN BACKGROUND
+import { Color } from './utils';
+
 chrome.runtime.onInstalled.addListener(() => {
   chrome.action.disable();
   const defaultsColors = [
