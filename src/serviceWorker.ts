@@ -2,18 +2,18 @@ import { Color } from './utils';
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.action.disable();
-  const defaultsColors = [
-    { color: '#121212', name: '--primary-bg-color' },
-    { color: '#1c1d1f', name: '--secondary-bg-color' },
-    { color: '#2a2a2a', name: '--tertiary-bg-color' },
-    { color: '#3a3a3a', name: '--quarternary-bg-color' },
+  const defaultsColors: Color[] = [
+    { value: '#121212', name: '--primary-bg-color' },
+    { value: '#1c1d1f', name: '--secondary-bg-color' },
+    { value: '#2a2a2a', name: '--tertiary-bg-color' },
+    { value: '#3a3a3a', name: '--quarternary-bg-color' },
 
-    { color: '#dcc2c2', name: '--primary-font-color' },
-    { color: '#000000', name: '--secondary-font-color' },
-    { color: '#ffffff', name: '--tertiary-font-color' },
-    { color: '#a59898', name: '--hover-font-color' },
+    { value: '#dcc2c2', name: '--primary-font-color' },
+    { value: '#000000', name: '--secondary-font-color' },
+    { value: '#ffffff', name: '--tertiary-font-color' },
+    { value: '#a59898', name: '--hover-font-color' },
 
-    { color: '#777777', name: '--primary-border-color' },
+    { value: '#777777', name: '--primary-border-color' },
   ];
   chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
     const rules = [
