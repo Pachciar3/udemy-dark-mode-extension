@@ -24,6 +24,10 @@ module.exports = {
         test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(txt|template.html)?$/i,
+        use: 'raw-loader',
+      },
     ],
   },
   resolve: {
