@@ -36,18 +36,17 @@ changeColor.onclick = function () {
           function (tabs) {
             chrome.scripting.executeScript({
               target: { tabId: tabs[0].id },
-              files: ['content_scripts/cscript.js'],
-            });
-            chrome.scripting.executeScript({
-              target: { tabId: tabs[0].id },
               func: () => {
                 document.body.classList.remove('dark_mode_on');
                 document.body.classList.add('dark_mode_off');
-                const logo: HTMLImageElement = document.querySelector(
-                  `[data-purpose='udemy-brand-logo']`,
-                );
-                logo.src =
-                  'https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg';
+                const logo: HTMLImageElement | undefined =
+                  document.querySelector(
+                    `.header--flex-middle--2QeVR.header--logo--rd7-H img`,
+                  );
+                if (logo && logo.src) {
+                  logo.src =
+                    'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
+                }
               },
             });
           },
