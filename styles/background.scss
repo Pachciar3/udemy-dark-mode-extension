@@ -1,443 +1,202 @@
 /*FAST STYLES*/
 body:not(.dark_mode_off) {
   background-color: #121212 !important;
-  .c_header,
-  .footer-v6 footer,
-  .section--section-heading--2k6aW,
-  .side-nav,
-  #edit-template .form-wrapper,
-  .what-you-get,
-  .right-col__module,
-  .curriculum-wrapper .section-container,
-  .curriculum-wrapper .lecture-container {
-    background-color: #2a2a2a;
-  }
-  .footer__inst-banner,
+  color: #dcc2c2;
+
+  .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
+  .header--header--1SLKV,
   .sidebar--content---4z0-,
-  .sidebar--sidebar-header--3RQk_,
-  .main-route--user-messaging__right--27tZ- {
-    background-color: #121212;
+  .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A {
+    background-color: #1c1d1f !important;
+  }
+  .discovery-units-loading-skeleton--course-image--1ssFq,
+  .discovery-units-loading-skeleton--course-info--2DlBi,
+  .discovery-units-loading-skeleton--title--19wuB,
+  span.block--block--1xkEI {
+    background-color: #3a3a3a !important;
+  }
+  .skeleton--shine--2LRqN::before {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      #524747
+    );
   }
 }
 
 /*SLOW STYLES*/
 html body.dark_mode_on {
   background-color: var(--primary-bg-color) !important;
-  color: var(--primary-font-color);
 
-  *:not(.form-control) {
-    color: var(--primary-font-color);
-  }
-
-  /*PRIMARY BAGCKGROUND*/
-  .container--light-grey,
-  .link-bar--wrapper--2tiYo,
-  .sidebar-notice--container--1pToS,
-  .topic-menu,
-  .search-result-page--search-result-container--1QJaS,
-  .footer-v6 .footer__inst-banner,
-  .styles--sc-wrapper--3ncS2,
-  .styles--cart-success-modal__modal-body--2X5ro,
-  .styles--sc-wrapper--3ncS2 .styles--sc-checkout-pane--71SP_,
-  .instructor-wrapper .instructor__tab-container .tab-content,
-  .sidebar--header--1C0Qx,
-  .sidebar--content---4z0-,
-  .curriculum-item-view--content--3ABmp,
-  pre,
-  .main-route--user-messaging__right--27tZ-,
-  .message-list--message-thread__messages--24cVD,
-  .reply-form--message-thread__new--d9LHV,
-  .reply-form--message-thread__new--d9LHV form,
-  .text-viewer--scroll-container--1iy0Z {
+  .styles--success-header--1zGG6,
+  .styles--success--24Rts,
+  .profile-course-lists--no-tabs-content--2uXSX,
+  #content,
+  .header .tab-bar,
+  .hero-inner {
     background-color: var(--primary-bg-color) !important;
-    color: var(--primary-font-color);
   }
-
-  /*SECONDARY BAGCKGROUND*/
-  .merchandising-course-card--mask--2-b-d,
-  .merchandising-course-card--course-title--2Ob4m,
-  .header--header--3sK1h,
-  .description-unit--skills-hub__description--YPW3a,
-  .panel-default,
-  .dropdown-menu,
-  .dropdown-menu .dropdown-menu--level-two,
-  .modal-content,
-  .btn-quaternary,
-  .brand-testimonials--testimonial-card--2hzgA,
-  .footer-v6 footer,
-  .single-course-unit-desktop--single-course-unit-content--1SR-P,
-  .topic-button--topic-button--39McU,
-  .person-card--person-card--39UrP,
-  .curriculum-course-card--container--1ZgwU:hover,
-  .filter-panel--container--aq5nC,
-  .list-view-course-card--container--2fJ9s:hover,
-  .link-bar-item--menu__item--2QDNh:not(.link-bar-item--lead-item--mZFmh)
-    .active,
-  .link-bar-item--menu__item--2QDNh:not(.link-bar-item--lead-item--mZFmh):hover,
-  .what-you-get,
-  .right-col__module,
-  .bundle-unit--container--3LI46,
-  .curriculum-wrapper .section-container,
-  .btn .btn-default,
-  .course-comparison-item--content-container--3L5DT:hover,
-  .comparison-module--wrapper--2n6AG,
-  .course-info-card--wrapper--Sazls,
-  .featured-review .featured-review__container,
-  .search-result-page--result-header--2MN29,
-  .search-result-page--all-filters-container--1kgaW,
-  .styles--clickable-banner--QHEVe,
-  .styles--clickable-banner__background--3hDkQ,
-  .udlite-footer .footer-section,
-  .browse-nav--nav-container--2QiNy,
-  .header--menu--3jznE,
-  .quick-view-box--content--2yFAy,
-  .ufb-ad--content-wrapper--3oESa,
-  .link-bar--category--1isGq:hover,
-  .link-bar--selected-category--17QA8,
-  .next-topics-discovery-unit--content--24wpL,
-  .alert-info,
-  .card,
-  .c_header .dropdown__footer a:hover,
-  .tooltip-neutral,
-  .tooltip-neutral .tooltip-inner,
-  .alert-success,
-  .side-nav,
-  #edit-template .form-wrapper,
-  .checkbox:not(.checkbox-slide):not(.checkbox-button).boxed:not(.disabled)
-    > label:hover,
-  .checkbox-inline:not(.checkbox-slide):not(.checkbox-button).boxed:not(
-      .disabled
-    )
-    > label:hover,
-  .instructor-wrapper .instructor__profile,
-  .bg-white,
-  .tiny-course-progress-card--course-progress-card--3TLH2,
-  .skeleton-course-card--content-loader--1lQpH.skeleton-course-card--content-loader-responsive--2_Rra
-    li,
-  .skeleton-my-learning-unit--skeleton-my-learning-unit-loader--3H1bC
-    .skeleton-my-learning-unit--unit-container--FGMgo,
-  .section--section-heading--2k6aW,
+  .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
+  .header--header--1SLKV,
+  .lecture-progress-card--lecture-progress-card--1LsBm:hover,
+  .lecture-progress-card--lecture-progress-card--1LsBm:active,
+  .ud-badge-bestseller,
+  .alert-banner--alert-banner-information--2slx4,
+  .section--section--BukKG .ud-accordion-panel-toggler,
+  .sidebar--sidebar-header--3RQk_,
+  .section--panel--1zoAn .ud-accordion-panel-toggler,
+  .sidebar-container--content--2KZyB,
+  .ud-select,
+  .ud-select option,
+  .ud-btn-secondary,
+  .ud-btn-secondary.ud-btn-disabled,
+  .modal--default-size--399MX,
+  #tabs--1-content-0,
+  .my-courses__app .ud-tab-content,
+  .ud-btn-white-solid,
+  .ud-btn-white-solid.ud-btn-disabled,
+  .thread-list-toolbar--container--2xeoA,
+  .thread-list--thread-list-container--2HHnK,
+  .message-list--messages--1aHZj,
+  .message-list--messages--1aHZj .message-list--message--x6bsA,
+  .app--payment-method-settings-container--2nmSF
+    > .app--payment-settings-container--2e-w8
+    .app--payment-setting--checkbox--3DmID,
+  .home ul.faq-grid li .wrap,
+  .home ul.faq-ins li .wrap,
+  .home ul.topics-grid li .wrap,
+  .contact-tile .wrap,
+  .hero-inner .search input,
+  .ud-search-form-autocomplete
+    .ud-search-form-autocomplete-suggestions-with-image,
+  #onetrust-banner-sdk #onetrust-reject-all-handler,
+  #onetrust-banner-sdk #onetrust-accept-btn-handler,
+  .lecture-bookmark-v2--content-container--2f_Tg,
+  .question-list-question--question-wrapper--3qHzn:hover {
+    background-color: var(--secondary-bg-color) !important;
+  }
+  .popover--popover--Az__U,
+  .single-course-unit--container--2D57g:hover,
+  .single-course-unit--container--2D57g:active,
+  .popular-topics-unit--topic-tag--3tYg-:hover,
+  .popular-topics-unit--topic-tag--3tYg-:active,
+  .header--search-bar--1g81R,
+  .popover--arrow--5b0-d::before,
+  .popover--arrow--5b0-d::after,
+  .curriculum-item-link--curriculum-item--KX9MD > .item-link,
+  .section--panel--1zoAn .ud-accordion-panel-content,
+  .dropdown--menu--38WE2 .ud-block-list,
+  .text-input-form--text-input-form--170x1 input,
+  .panel-menu--footer--sY39u,
+  .ud-avatar,
+  .options-menu--menu-heading--zKjVN,
+  .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A,
+  .alert-banner--alert-banner-success--kPw8D,
+  .ud-text-input-large,
+  .rt-menu-bar-container-sticky,
+  .rt-editor,
+  div.text-input-with-addons--addon--1dOJH,
+  .thread-list--thread--BXLgb:hover,
+  .thread-list--thread--BXLgb.thread-list--active--3aBTC {
+    background-color: var(--tertiary-bg-color);
+  }
+  .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
   .curriculum-item-link--curriculum-item--KX9MD.curriculum-item-link--is-current--31BPo
     > .item-link,
-  .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
-  .instructor-profile--social-profile-btn--fs2ve:hover,
-  .question-list-question--question-wrapper--3qHzn:hover,
-  .radio:not(.radio-button).boxed:not(.disabled) > label:hover,
-  .radio-inline:not(.radio-button).boxed:not(.disabled) > label:hover,
-  .well,
-  .question-details--details--3C4k2,
-  .rt-menu-bar .btn.active,
-  .popover--popover--1sy7H,
-  .popover--popover--click--3nXVQ,
-  .comment--comment--160e1,
-  .main-route--user-messaging--3ak_b,
-  .curriculum-item-footer--footer--Rin15,
-  .section--section--BukKG .ud-accordion-panel-toggler,
-  .alert-banner--alert-banner-information--2slx4,
-  .dropdown--dropdown-menu--2Lfsz {
-    background-color: var(--secondary-bg-color) !important;
+  .rt-editor pre.prettyprint,
+  .rt-scaffolding code {
+    background-color: var(--quarternary-bg-color);
+  }
+  .ud-btn-white-solid:hover,
+  .ud-btn-white-solid.ud-btn-disabled:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  .filter-container--loading-overlay--2Rm2K {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .ud-btn-secondary {
+    background-color: var(--primary-font-color);
+  }
+
+  *,
+  .item-card--item-card-title--_-dkH:hover,
+  .course-card--container--1QM2W h3[data-purpose='course-title-url'] a,
+  .subcategory-link-bar--subcategory-link-bar--24CSR
+    .subcategory-link-bar--category--m9LeC,
+  .subcategory-link-bar--subcategory-link-bar--24CSR
+    .subcategory-link-bar--subcategory--3tEKQ,
+  .subcategory-link-bar--subcategory-link-bar--24CSR
+    .subcategory-link-bar--subcategory-in-dropdown--hdpz8,
+  .shopping-item--container--XGMrp .shopping-item--course-title--1nay8 a,
+  .header .tab-bar a.back,
+  .header .language-selector .dropdown-toggle,
+  .home ul.tabs li.active a {
     color: var(--primary-font-color) !important;
   }
-
-  /*SECONDARY BAGCKGROUND && SECONDARY FONT*/
-  .merchandising-course-card--mask--2-b-d,
-  .merchandising-course-card--course-title--2Ob4m,
-  .popover--popover--1sy7H,
-  .form-control-counter,
-  .c_header {
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-font-color);
-  }
-
-  /*LIGHT BAGCKGROUND && PRIMARY FONT*/
-  .carousel-arrow,
-  input,
-  .instructor-response--container--yPk8G,
-  .refund-notice--refund-notice--1nq4D,
-  .btn-default,
-  .udlite-btn-ghost:active,
-  .udlite-btn-secondary:active,
-  .card--learning .details__progress,
-  .form-control,
-  .c_header .dropdown__footer,
-  .bg-rain-lighter,
-  .list-group-item,
-  .notification-preferences--notification-option--1OD9J,
-  .skeleton-course-card--loader__item--3OJLF,
-  .skeleton-course-card--loader__item--3OJLF,
-  .dropdown-menu-link:hover,
-  .video-js .playback-rate--playback-rate-value--3SJ7v,
-  .message-list--message-thread__messages--24cVD .message-list--message--x6bsA,
-  .base-thread-item--message-thread--2pjVx:hover
-    .base-thread-item--message-thread__container--2sOg4,
-  .base-thread-item--message-thread--2pjVx.base-thread-item--active--1LVBL
-    .base-thread-item--message-thread__container--2sOg4 {
-    background-color: var(--light-bg-color) !important;
-    color: var(--primary-font-color) !important;
-  }
-
-  /*LIGHT GREY BAGCKGROUND && SECONDARY FONT*/
-  .es-autocomplete--primary .input-group,
-  .es-autocomplete--primary .input-group,
-  .menu__link:hover,
-  .topic-menu__link:hover,
-  .curriculum-wrapper .lecture-container,
-  .progress-xs,
-  .btn-tertiary:hover,
-  .dropdown-menu > li > a:hover,
-  .rt-menu-bar-container,
-  .rt-editor,
-  .styles--sc-shopping-list__items--h-1Zf.styles--sc-shopping-list__items--dropdown--eop-D
-    .styles--sc-shopping-list__item--26SKJ:hover,
-  .styles--dropdown__footer--2q66h,
-  .skeleton-my-learning-unit--skeleton-my-learning-unit-loader--3H1bC
-    .skeleton-my-learning-unit--loader__item--6rZyR,
-  .instructor-profile--social-links-row--14uvr a,
-  .num-upvotes--container--2faOh .btn:hover,
-  .btn-quintinary:hover,
-  .lecture-bookmark-v2--content-container--2f_Tg,
-  .checkbox:not(.checkbox-slide):not(.checkbox-button)
-    input[type='checkbox']:not(:checked)
-    + .checkbox-label:before,
-  .checkbox-inline:not(.checkbox-slide):not(.checkbox-button)
-    input[type='checkbox']:not(:checked)
-    + .checkbox-label:before,
-  .checkbox:not(.checkbox-slide):not(.checkbox-button)
-    input[type='checkbox']:not(:checked)
-    + .checkbox-label:after,
-  .checkbox-inline:not(.checkbox-slide):not(.checkbox-button)
-    input[type='checkbox']:not(:checked)
-    + .checkbox-label:after {
-    background-color: var(--light-bg-color) !important;
+  .ud-badge-hot-and-new,
+  .hero-header--title---4jCL,
+  .hero-header--subtitle--athYy,
+  .hero-header--cta--3lLy8,
+  .from-instructors--quote--1tMSP,
+  .from-instructors--title--2wCfM,
+  .from-instructors--subtitle--3-zFG,
+  .hero-header--billboard-container--sYvLn > .teach-page__heading,
+  .teach-page__pale-container > .teach-page__container > .teach-page__heading,
+  .simple-cta--subtitle--VWykw,
+  .ud-badge-highest-rated,
+  .ud-badge-new,
+  .smart-bar--smart-bar--1rOkE .smart-bar--basic-bar-content--2jJSQ span,
+  .smart-bar--smart-bar--1rOkE a {
     color: var(--secondary-font-color) !important;
   }
-
-  /*VERY LIGHT BACKGROUND*/
-  .input-group-addon {
-    background-color: var(--very-light-bg-color);
+  .header--dropdown-button--ht4OS:hover .header--dropdown-button-text--2OxOV,
+  .header--dropdown-button--ht4OS:hover .ud-icon,
+  .ud-popper-open .header--dropdown-button-text--2OxOV,
+  .ud-popper-open .header--dropdown-button--ht4OS .ud-icon,
+  .popular-topics-unit--topic-tag--3tYg-:hover,
+  .popular-topics-unit--topic-tag--3tYg-:active,
+  .subcategory-link-bar--subcategory-link-bar--24CSR
+    .subcategory-link-bar--category--m9LeC:hover,
+  .subcategory-link-bar--subcategory-link-bar--24CSR
+    .subcategory-link-bar--subcategory--3tEKQ:hover,
+  .subcategory-link-bar--subcategory-link-bar--24CSR
+    .subcategory-link-bar--subcategory-in-dropdown--hdpz8:hover,
+  .header--header--1SLKV .js-header-search-field::placeholder,
+  .ud-btn-secondary:active,
+  .ud-btn-secondary:hover {
+    color: var(--hover-font-color);
+  }
+  .ud-footer .inverted-link {
+    color: #6e5cd7;
+  }
+  *,
+  .header--search-bar--1g81R:hover,
+  .ud-footer .language-selector-container .ud-btn,
+  .ud-footer .language-selector-container .ud-icon,
+  .course-landing-page_sidebar-container .intro-asset--img-aspect--3fbKk img,
+  .course-landing-page_sidebar-container .intro-asset--overlay--3jyau,
+  .section--panel--1zoAn .ud-accordion-panel-content,
+  .ud-search-form-autocomplete
+    .ud-search-form-autocomplete-suggestions-with-image,
+  .course-list--container--FuG0T > *:not(:last-child) {
+    border-color: var(--primary-border-color);
+  }
+  .ud-btn-white-solid,
+  .ud-btn-white-solid.ud-btn-disabled,
+  .popover--popover--Az__U,
+  .rt-editor pre.prettyprint,
+  .rt-scaffolding code {
+    border: 1px solid var(--primary-border-color);
+    box-shadow: none;
+  }
+  .header--search-bar--1g81R {
+    border-color: transparent;
   }
 
-  .btn-secondary:disabled,
-  .btn-secondary.disabled,
-  .btn-secondary[disabled],
-  fieldset[disabled] .btn-secondary,
-  code,
-  .btn-primary:disabled,
-  .btn-primary.disabled,
-  .btn-primary[disabled],
-  fieldset[disabled] .btn-primary {
-    background-color: var(--very-light-bg-color) !important;
+  .ud-fake-toggle-checkbox use {
+    display: none;
   }
-
-  /*UDEMY BACKGROUND*/
-  .purchase-text,
-  .btn-danger,
-  .instructor-wrapper .instructor__tab-container.container--light-grey,
-  .link-bar--linkbar--ZGZxf,
-  .instructor-wrapper .instructor__tab-container {
-    background-color: var(--udemy-darkblue-bg-color) !important;
-  }
-
-  /*PRIMARY FONT COLOR*/
-  .quick-view-box--objective-text--1ro4W,
-  .curriculum-wrapper .lecture-container .title,
-  .form-control::placeholder,
-  .c_header .mylearning__item a:hover .metadata__title,
-  .c_header .dropdown--mylearning .metadata__instructor,
-  .c_header .menu__link a:not(.btn),
-  .instructor-profile--title--1rlDt a:hover,
-  a:hover,
-  .item-link--default-theme--YqsPR:hover,
-  pre.prettyprinted .pln,
-  pre.prettyprinted .pun,
-  pre.prettyprinted .opn,
-  pre.prettyprinted .clo,
-  .curriculum-wrapper
-    .lecture-container.lecture-container--preview
-    .content-summary,
-  .curriculum-wrapper .lecture-container.lecture-container--preview .title,
-  .curriculum-wrapper
-    .lecture-container.lecture-container--preview
-    .preview-text,
-  .curriculum-wrapper .lecture-container.lecture-container--preview .udi {
-    color: var(--primary-font-color) !important;
-  }
-
-  .curriculum-wrapper .lecture-container.lecture-container--preview .title a {
-    color: var(--primary-font-color) !important;
-    font-weight: 700 !important;
-  }
-
-  /*SECONDARY FONT COLOR*/
-  .unit-title--title-box--3tVMv h2,
-  .skills-hub-unit-desktop--skill-link--3SpB6.skills-hub-unit-desktop--is-active--3ql8W,
-  .btn-link:hover,
-  .es-autocomplete--primary .input-group::placeholder,
-  .btn,
-  input::placeholder,
-  .clp-lead__title,
-  .category--section-title--3SLWt,
-  .featured-course-unit-desktop--title--22_zg,
-  .jumbotron__title h1,
-  .requirements__title,
-  .description__title,
-  .view-more-container--view-more__title--3OY_y,
-  .curriculum-header-title,
-  .bundle-unit--title--2hVFH,
-  .reviews-section--title--2Uzsu,
-  .what-you-get__title,
-  .curriculum-wrapper
-    .lecture-container.lecture-container--preview
-    .title
-    a:hover,
-  .price-text--light--3Zi7y span,
-  .udlite-heading-xxxl,
-  .banner--headline--L86zL,
-  .banner--sub-headline--39BWB,
-  .browse-nav--nav--1WzbY a.browse-nav--nav-item--3q5eF:hover span,
-  .inst-banner__heading,
-  .jumbotron-header-bar h1,
-  .card-wrapper h2,
-  .c_header .dropdown__footer a,
-  .c_header .dropdown--mylearning .metadata__title,
-  .styles--sc-shopping-list__title--3giMp,
-  .price-text--base-price__container--Xwk8v.price-text--vertical--2g5Zg
-    .price-text--base-price__discount--1J7vF
-    span
-    span,
-  #edit-template #main-section h2,
-  .shopping-list__course-title,
-  .shopping-list__title,
-  .styles--sc-shopping-list__items--h-1Zf.styles--sc-shopping-list__items--checkout--fPnyO
-    .styles--sc-card__title--L-qWv,
-  .styles--sc-shopping-list__items--h-1Zf.styles--sc-shopping-list__items--dropdown--eop-D
-    .styles--sc-card__title--L-qWv,
-  .history-detail__price b,
-  .price-text--black--1qJbH span span,
-  .quick-view-box--box--3cUtO
-    .quick-view-box--top--26Tmi
-    .quick-view-box--title--3SbSa
-    span,
-  .my-learning-unit--welcome-banner--2vejp,
-  .logged-in-home--section-title--rF4rS,
-  .user-avatar--initials .user-initials,
-  .merchandising-course-card--course-title--2Ob4m,
-  .tiny-course-progress-card--course-title--290Ip,
-  .course-comparison-item--title-subtitle-container__title--mBhI5,
-  .section--section--BukKG
-    .section--section-heading--2k6aW
-    .section--title--eCwjX
-    span
-    span
-    span,
-  .section--section-chevron--tJ4mD,
-  .nav-tabs > li.active > a,
-  .mb-space-sm,
-  .course-overview--description--2m1iq strong,
-  .course-overview--description--2m1iq h4,
-  .course-overview--description--2m1iq h3,
-  .course-overview--description--2m1iq h2,
-  .course-overview--description--2m1iq h1,
-  .instructor-profile--title--1rlDt a,
-  .question-overview--filter-results-summary--2k-XZ,
-  .question-list-question--title--2Ctaz,
-  .item-link--default-theme--YqsPR,
-  a,
-  code,
-  .question-details--title--1w2zn,
-  .question-details--separator-numanswers--SR6Ki,
-  .curriculum-item-link--curriculum-item--KX9MD
-    > .item-link
-    .curriculum-item-link--title--zI5QT
-    span
-    span,
-  .lecture-bookmark-v2--intro--132ek,
-  .header--course-title--tHmMe span span span,
-  pre.prettyprinted .typ,
-  .thread-header--message-thread__head-name--CAaHq,
-  .base-thread-item--message-thread__user-title--9yeq- {
-    color: var(--secondary-font-color) !important;
-  }
-
-  /*SUCCESS COLOR*/
-  pre.prettyprinted .lit {
-    color: var(--success-font-color);
-  }
-
-  /*SECONDARY BG FONT COLOR*/
-  .badge .badge-text,
-  .smart-bar--smart-bar--1rOkE,
-  .smart-bar-timer--timer-container--2mwOn span,
-  .smart-bar--smart-bar__close--3mCup span,
-  .smart-bar--smart-bar__title--1LFsk,
-  .smart-bar--smart-bar__subtitle--I38FP,
-  .udlite-badge-bestseller {
-    color: var(--secondary-bg-color) !important;
-  }
-
-  /*INITAL BACKGROUND*/
-  .c_header .dropdown--topics .dropdown-menu__list > li.maintain-hover > a {
-    background: initial;
-  }
-
-  /*LINEAR BACKGROUND*/
-  .instructor--instructor--2qudS
-    .instructor--instructor__view-more-wrapper--w6L78,
-  .view-more-container--view-more__button-container--gradient--CmaZZ,
-  .js-wrapper-simple-collapse-more-btn {
-    background: linear-gradient(
-      rgba(42, 42, 42, 0),
-      rgba(42, 42, 42, 0.95),
-      #2a2a2a
-    );
-  }
-
-  /*BORDER*/
-  .sidebar--header--1C0Qx,
-  .sidebar--content---4z0-,
-  .base-thread-item--message-thread__container--2sOg4,
-  .section--section--BukKG,
-  .alert-banner--alert-banner-information--2slx4,
-  .sidebar--sidebar-header--3RQk_ {
-    border: none;
-  }
-  .btn-quaternary {
-    border: 1px solid;
-    border-color: var(--secondary-font-color);
-  }
-
-  .btn-quaternary:hover,
-  .btn-quaternary:focus {
-    border: 1px solid;
-    border-color: var(--primary-font-color);
-  }
-
-  .container--light-grey,
-  .footer__inst-banner {
-    border-top: 1px solid;
-    border-top-color: var(--primary-font-color);
-  }
-
-  .question-list-question--question-wrapper--3qHzn,
-  .question-list--load-more--3LTv6,
-  .course-overview--grid-row--1nKqQ {
-    border-top: 1px solid;
-    border-top-color: var(--light-bg-color);
-  }
-
-  .section--section--BukKG,
-  .link-bar--linkbar--ZGZxf {
-    border-bottom-width: 1px !important;
-    border-bottom-style: solid !important;
-    border-bottom-color: var(--light-bg-color) !important;
-  }
-
-  .app--sidebar-column--2t0E8 {
-    border-left: 1px solid;
-    border-left-color: var(--light-bg-color);
-  }
-
-  .instructor-response--arrow--1Qcf6:after {
-    border-bottom-color: var(--light-bg-color) !important;
+  .ud-real-toggle-input:checked ~ .ud-fake-toggle-checkbox use {
+    display: block !important;
   }
 }

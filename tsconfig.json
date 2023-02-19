@@ -4,9 +4,10 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "module": "es6",
-    "target": "es5",
+    "target": "ES2021",
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "esModuleInterop": true
     // "strictNullChecks": true,
     // "strict": true
   }

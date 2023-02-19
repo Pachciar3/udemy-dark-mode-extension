@@ -1,23 +1,56 @@
 import { Color } from '../utils';
 
+import FormHTML from '../templates/form.template.html';
+
+const colorRegExp = new RegExp('[#]{1}[0-9a-fA-F]{6}');
+
 export default function createForm(
   index: number,
   color: Color,
   colors: Color[],
-  colorRegExp: RegExp,
-  inputsID: [string, string],
 ) {
+  const inputText = `color-text-${index}`;
+  const inputPicker = `color-picker-${index}`;
+
   const form = document.createElement('form');
   form.className = 'option__collapse';
   form.id = `box${index}`;
-  form.addEventListener('submit', (e) => {
+  form.innerHTML = FormHTML.replaceAll('FieldInput', inputText).replaceAll(
+    'FieldPicker',
+    inputPicker,
+  );
+
+  const fieldInput = form.children[0]
+    .getElementsByTagName('input')
+    .namedItem(inputText);
+  const fieldPicker = form.children[0]
+    .getElementsByTagName('input')
+    .namedItem(inputPicker);
+  fieldInput.value = color.value.slice(1, 7);
+  fieldPicker.value = color.value;
+
+  fieldInput.addEventListener('input', (e: InputEvent) => {
+    const value = (<HTMLInputElement>e.target).value;
+    if (colorRegExp.test(`#${value}`)) {
+      fieldPicker.value = `#${value}`;
+    } else {
+      fieldPicker.value = '#000000';
+    }
+  });
+
+  fieldPicker.addEventListener('input', (e: InputEvent) => {
+    const value = (<HTMLInputElement>e.target).value;
+    fieldInput.value = value.slice(1, 7);
+  });
+
+  form.addEventListener('submit', (e: SubmitEvent) => {
     e.preventDefault();
     const infoBox = form.querySelector('.option__info');
-    if (infoBox) {
+    if (infoBox && `#${fieldInput.value}` !== colors[index].value) {
       infoBox.innerHTML = '';
-      if (colorRegExp.test(colors[index].color)) {
+      if (colorRegExp.test(`#${fieldInput.value}`)) {
         const newColors = [...colors];
-        newColors[index] = colors[index];
+        newColors[index].value = `#${fieldInput.value}`;
         chrome.storage.sync.set({ colors: newColors }, () => {
           infoBox.className = 'option__info option__info--success';
           infoBox.textContent = 'Saved!';
@@ -30,47 +63,5 @@ export default function createForm(
     }
   });
 
-  form.innerHTML += `
-      <div class="option__con">
-        <div class="option__con-left">
-          <fieldset class="field">
-            <label class="field__label" for="color-text"
-              >Write color in hexadecimal
-            </label>
-            <div class="field__con">
-              <span class="field__prefix">#</span>
-              <input
-                type="text"
-                class="field__input"
-                id="${inputsID[0]}"
-                maxlength="6"
-                value="${color.color.slice(1, 7)}"
-              />
-            </div>
-          </fieldset>
-        </div>
-        <div class="option__con-separator">or</div>
-        <div class="option__con-right">
-          <fieldset class="field">
-            <label class="field__label" for="color-picker"
-              >Pick color</label
-            >
-            <div class="field__con">
-              <input
-                class="field__input"
-                id="${inputsID[1]}"
-                name="Color Picker"
-                type="color"
-                value="${color.color}"
-              />
-            </div>
-          </fieldset>
-        </div>
-      </div>
-      <div class="option__btn-con">
-        <button class="btn">Save</button
-        ><span class="option__info"></span>
-      </div>
-  `;
   return form;
 }
