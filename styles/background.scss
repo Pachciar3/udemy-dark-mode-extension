@@ -78,7 +78,10 @@ html body.dark_mode_on {
   .logged-out-home-page--background-pale--3fBab,
   .modal-module--dialog--2ZCCG,
   .logged-out-home-page .browse-value-props,
-  .lohp-trending-topics {
+  .lohp-trending-topics,
+  .section--panel--1zoAn .section--toggle-item-description-button--2CBSP,
+  .reply-form--form-container--1i7yi,
+  .reply-form--form-container--1i7yi form {
     background-color: var(--secondary-bg-color) !important;
   }
   .popover-module--popover--1kskS,
@@ -105,7 +108,8 @@ html body.dark_mode_on {
   .thread-list--thread--BXLgb:hover,
   .thread-list--thread--BXLgb.thread-list--active--3aBTC,
   .testimonial-card--card--1cdYc,
-  .value-props-module--props--small--1I4jK .value-props-module--icon--2esxz {
+  .value-props-module--props--small--1I4jK .value-props-module--icon--2esxz,
+  textarea {
     background-color: var(--tertiary-bg-color);
   }
   .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
@@ -113,7 +117,8 @@ html body.dark_mode_on {
     > .item-link,
   .rt-editor pre.prettyprint,
   .rt-scaffolding code,
-  .ud-avatar {
+  .ud-avatar,
+  .tooltip-module--white--3VDM1 {
     background-color: var(--quarternary-bg-color);
   }
   .ud-btn-white-solid:hover,
