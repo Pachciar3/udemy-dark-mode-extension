@@ -42,7 +42,7 @@ html body.dark_mode_on {
   .lecture-progress-card--lecture-progress-card--1LsBm:hover,
   .lecture-progress-card--lecture-progress-card--1LsBm:active,
   .ud-badge-bestseller,
-  .alert-banner--alert-banner-information--2slx4,
+  .alert-banner-module--alert-banner-information--mrXyw,
   .section--section--BukKG .ud-accordion-panel-toggler,
   .sidebar--sidebar-header--3RQk_,
   .section--panel--1zoAn .ud-accordion-panel-toggler,
@@ -73,7 +73,12 @@ html body.dark_mode_on {
   #onetrust-banner-sdk #onetrust-reject-all-handler,
   #onetrust-banner-sdk #onetrust-accept-btn-handler,
   .lecture-bookmark-v2--content-container--2f_Tg,
-  .question-list-question--question-wrapper--3qHzn:hover {
+  .question-list-question--question-wrapper--3qHzn:hover,
+  .discovery-units--testimonials-container--2Nxfx,
+  .logged-out-home-page--background-pale--3fBab,
+  .modal-module--dialog--2ZCCG,
+  .logged-out-home-page .browse-value-props,
+  .lohp-trending-topics {
     background-color: var(--secondary-bg-color) !important;
   }
   .popover-module--popover--1kskS,
@@ -98,14 +103,17 @@ html body.dark_mode_on {
   .rt-editor,
   div.text-input-with-addons--addon--1dOJH,
   .thread-list--thread--BXLgb:hover,
-  .thread-list--thread--BXLgb.thread-list--active--3aBTC {
+  .thread-list--thread--BXLgb.thread-list--active--3aBTC,
+  .testimonial-card--card--1cdYc,
+  .value-props-module--props--small--1I4jK .value-props-module--icon--2esxz {
     background-color: var(--tertiary-bg-color);
   }
   .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
   .curriculum-item-link--curriculum-item--KX9MD.curriculum-item-link--is-current--31BPo
     > .item-link,
   .rt-editor pre.prettyprint,
-  .rt-scaffolding code {
+  .rt-scaffolding code,
+  .ud-avatar {
     background-color: var(--quarternary-bg-color);
   }
   .ud-btn-white-solid:hover,
@@ -199,5 +207,12 @@ html body.dark_mode_on {
   }
   .ud-real-toggle-input:checked ~ .ud-fake-toggle-checkbox use {
     display: block !important;
+  }
+  .testimonial-card--testimonial--1vJ4Y img,
+  img.non-student-cta--non-student-cta__header--3xgVp {
+    filter: invert(0.6);
+  }
+  .category-card--img-wrapper--1-XAz img {
+    filter: invert(0.8);
   }
 }
