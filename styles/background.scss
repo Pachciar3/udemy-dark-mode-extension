@@ -12,10 +12,11 @@ body:not(.dark_mode_off) {
   .discovery-units-loading-skeleton--course-image--1ssFq,
   .discovery-units-loading-skeleton--course-info--2DlBi,
   .discovery-units-loading-skeleton--title--19wuB,
-  span.block--block--1xkEI {
+  span.block-module--block--RPRKE,
+  .ud-block-list-item-content-loading {
     background-color: #3a3a3a !important;
   }
-  .skeleton--shine--2LRqN::before {
+  .skeleton-module--shine--3vVXo::before {
     background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
@@ -41,7 +42,7 @@ html body.dark_mode_on {
   .lecture-progress-card--lecture-progress-card--1LsBm:hover,
   .lecture-progress-card--lecture-progress-card--1LsBm:active,
   .ud-badge-bestseller,
-  .alert-banner--alert-banner-information--2slx4,
+  .alert-banner-module--alert-banner-information--mrXyw,
   .section--section--BukKG .ud-accordion-panel-toggler,
   .sidebar--sidebar-header--3RQk_,
   .section--panel--1zoAn .ud-accordion-panel-toggler,
@@ -72,17 +73,25 @@ html body.dark_mode_on {
   #onetrust-banner-sdk #onetrust-reject-all-handler,
   #onetrust-banner-sdk #onetrust-accept-btn-handler,
   .lecture-bookmark-v2--content-container--2f_Tg,
-  .question-list-question--question-wrapper--3qHzn:hover {
+  .question-list-question--question-wrapper--3qHzn:hover,
+  .discovery-units--testimonials-container--2Nxfx,
+  .logged-out-home-page--background-pale--3fBab,
+  .modal-module--dialog--2ZCCG,
+  .logged-out-home-page .browse-value-props,
+  .lohp-trending-topics,
+  .section--panel--1zoAn .section--toggle-item-description-button--2CBSP,
+  .reply-form--form-container--1i7yi,
+  .reply-form--form-container--1i7yi form {
     background-color: var(--secondary-bg-color) !important;
   }
-  .popover--popover--Az__U,
+  .popover-module--popover--1kskS,
   .single-course-unit--container--2D57g:hover,
   .single-course-unit--container--2D57g:active,
   .popular-topics-unit--topic-tag--3tYg-:hover,
   .popular-topics-unit--topic-tag--3tYg-:active,
   .header--search-bar--1g81R,
-  .popover--arrow--5b0-d::before,
-  .popover--arrow--5b0-d::after,
+  .popover-module--arrow--abDwz::before,
+  .popover-module--arrow--abDwz::after,
   .curriculum-item-link--curriculum-item--KX9MD > .item-link,
   .section--panel--1zoAn .ud-accordion-panel-content,
   .dropdown--menu--38WE2 .ud-block-list,
@@ -91,20 +100,25 @@ html body.dark_mode_on {
   .ud-avatar,
   .options-menu--menu-heading--zKjVN,
   .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A,
-  .alert-banner--alert-banner-success--kPw8D,
+  .alert-banner-module--alert-banner-success--30DzS,
   .ud-text-input-large,
   .rt-menu-bar-container-sticky,
   .rt-editor,
   div.text-input-with-addons--addon--1dOJH,
   .thread-list--thread--BXLgb:hover,
-  .thread-list--thread--BXLgb.thread-list--active--3aBTC {
+  .thread-list--thread--BXLgb.thread-list--active--3aBTC,
+  .testimonial-card--card--1cdYc,
+  .value-props-module--props--small--1I4jK .value-props-module--icon--2esxz,
+  textarea {
     background-color: var(--tertiary-bg-color);
   }
   .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
   .curriculum-item-link--curriculum-item--KX9MD.curriculum-item-link--is-current--31BPo
     > .item-link,
   .rt-editor pre.prettyprint,
-  .rt-scaffolding code {
+  .rt-scaffolding code,
+  .ud-avatar,
+  .tooltip-module--white--3VDM1 {
     background-color: var(--quarternary-bg-color);
   }
   .ud-btn-white-solid:hover,
@@ -183,7 +197,7 @@ html body.dark_mode_on {
   }
   .ud-btn-white-solid,
   .ud-btn-white-solid.ud-btn-disabled,
-  .popover--popover--Az__U,
+  .popover-module--popover--1kskS,
   .rt-editor pre.prettyprint,
   .rt-scaffolding code {
     border: 1px solid var(--primary-border-color);
@@ -198,5 +212,12 @@ html body.dark_mode_on {
   }
   .ud-real-toggle-input:checked ~ .ud-fake-toggle-checkbox use {
     display: block !important;
+  }
+  .testimonial-card--testimonial--1vJ4Y img,
+  img.non-student-cta--non-student-cta__header--3xgVp {
+    filter: invert(0.6);
+  }
+  .category-card--img-wrapper--1-XAz img {
+    filter: invert(0.8);
   }
 }
