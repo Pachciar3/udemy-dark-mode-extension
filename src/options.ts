@@ -26,9 +26,7 @@ const constructOptions = (colors: Color[], openedOptionName?: string) => {
 };
 
 chrome.storage.sync.get(['colors'], (result: Result) => {
-  const colors: Color[] = result.colors;
-
-  constructOptions(colors);
+  constructOptions(result.colors as Color[]);
 });
 
 chrome.storage.onChanged.addListener((changes) => {

@@ -12,7 +12,7 @@ body {
 
 .main-title {
   text-align: center;
-  padding: 30px 0px;
+  padding: 30px 0;
   font-size: 35px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -21,13 +21,13 @@ body {
 
 .options {
   background-color: #2a2a2a;
-  margin: 0px auto 0px;
+  margin: 0 auto 0;
   max-width: 800px;
   padding: 20px;
 
   &__list:has(.loader) {
     text-align: center;
-    padding: 60px 0px;
+    padding: 60px 0;
   }
 
   &__title {
@@ -62,7 +62,7 @@ body {
     }
   }
   &__collapse {
-    height: 0px;
+    height: 0;
     overflow: hidden;
     transition: height 0.2s linear;
   }
@@ -89,7 +89,7 @@ body {
     }
   }
   &__btn-con {
-    padding: 0px 10px 20px;
+    padding: 0 10px 20px;
   }
   &__info {
     margin-left: 5px;
