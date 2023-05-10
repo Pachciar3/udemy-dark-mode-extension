@@ -81,7 +81,9 @@ html body.dark_mode_on {
   .lohp-trending-topics,
   .section--panel--1zoAn .section--toggle-item-description-button--2CBSP,
   .reply-form--form-container--1i7yi,
-  .reply-form--form-container--1i7yi form {
+  .reply-form--form-container--1i7yi form,
+  .dropdown-module--dropdown-menu--3HbSn,
+  .bottom-drawer-module--bottom-drawer-container--2ue7_ {
     background-color: var(--secondary-bg-color) !important;
   }
   .popover-module--popover--1kskS,
@@ -109,7 +111,8 @@ html body.dark_mode_on {
   .thread-list--thread--BXLgb.thread-list--active--3aBTC,
   .testimonial-card--card--1cdYc,
   .value-props-module--props--small--1I4jK .value-props-module--icon--2esxz,
-  textarea {
+  textarea,
+  .playback-rate--trigger-text--3DafK {
     background-color: var(--tertiary-bg-color);
   }
   .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
@@ -118,7 +121,8 @@ html body.dark_mode_on {
   .rt-editor pre.prettyprint,
   .rt-scaffolding code,
   .ud-avatar,
-  .tooltip-module--white--3VDM1 {
+  .tooltip-module--white--3VDM1,
+  .control-bar-dropdown--trigger-dark--1qTuU:hover span {
     background-color: var(--quarternary-bg-color);
   }
   .ud-btn-white-solid:hover,
