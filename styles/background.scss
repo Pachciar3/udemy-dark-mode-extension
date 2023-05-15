@@ -232,17 +232,26 @@ html body.dark_mode_on {
     color: var(--hover-font-color);
   }
 
-  .ud-footer .inverted-link,
-  .smart-bar-module--smart-bar__title--TnwIQ,
-  .smart-bar-module--smart-bar__title--TnwIQ + span,
-  .smart-bar-module--smart-bar-timer--rERpC span,
-  .smart-bar-module--smart-bar__close--1CtiJ svg,
-  .smart-bar-module--basic-bar-content--2fGlA a {
-    color: #6e5cd7;
+  .smart-bar-module--smart-bar--yellow--2gqPd {
+    .smart-bar-module--smart-bar__title--TnwIQ,
+    .smart-bar-module--smart-bar__title--TnwIQ + span,
+    .smart-bar-module--smart-bar-timer--rERpC span,
+    .smart-bar-module--smart-bar__close--1CtiJ svg,
+    .smart-bar-module--basic-bar-content--2fGlA a {
+      color: var(--primary-bg-color);
+    }
+
+    .smart-bar-module--smart-bar__close--1CtiJ svg {
+      fill: var(--primary-bg-color);
+    }
+    .smart-bar-module--basic-bar-content--2fGlA a:hover,
+    .smart-bar-module--smart-bar__close--1CtiJ:hover {
+      opacity: 0.7;
+    }
   }
 
-  .smart-bar-module--smart-bar__close--1CtiJ svg {
-    fill: #6e5cd7;
+  .ud-footer .inverted-link {
+    color: #6e5cd7;
   }
 
   *,
