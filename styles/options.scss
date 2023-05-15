@@ -138,9 +138,9 @@ body {
   border-top: 1px solid #dcc2c2;
   a {
     color: #fff;
-    font-weight: bold;
+    text-decoration: none;
     &:hover {
-      color: yellow;
+      text-decoration: underline;
     }
   }
 }
