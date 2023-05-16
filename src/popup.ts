@@ -21,8 +21,8 @@ changeColor.onclick = function () {
       chrome.storage.local.set({ udemy_dark_mode: true }, () => {
         chrome.tabs.query(
           { active: true, currentWindow: true },
-          function (tabs) {
-            chrome.scripting.executeScript({
+          async function (tabs) {
+            await chrome.scripting.executeScript({
               target: { tabId: tabs[0].id },
               files: ['content.js'],
             });
@@ -33,8 +33,8 @@ changeColor.onclick = function () {
       chrome.storage.local.set({ udemy_dark_mode: false }, () => {
         chrome.tabs.query(
           { active: true, currentWindow: true },
-          function (tabs) {
-            chrome.scripting.executeScript({
+          async function (tabs) {
+            await chrome.scripting.executeScript({
               target: { tabId: tabs[0].id },
               func: () => {
                 document.body.classList.remove('dark_mode_on');

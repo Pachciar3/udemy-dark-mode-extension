@@ -10,9 +10,8 @@ export default function createCollapseButton(
 ) {
   const collapseButton = document.createElement('button');
 
-  const collapseButtonClassName =
+  collapseButton.className =
     index % 2 ? 'option__btn option__btn--even' : 'option__btn';
-  collapseButton.className = collapseButtonClassName;
   collapseButton.dataset[searchName] = `box${index}`;
   collapseButton.setAttribute('aria-controls', `box${index}`);
   collapseButton.setAttribute('aria-expanded', 'false');
