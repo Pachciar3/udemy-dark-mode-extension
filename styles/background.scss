@@ -34,9 +34,14 @@ html body.dark_mode_on {
   .profile-course-lists--no-tabs-content--2uXSX,
   #content,
   .header .tab-bar,
-  .hero-inner {
+  .hero-inner,
+  .image-upload-preview-with-crop--image-wrapper--2soBW,
+  .fast-feedback--container--1mut2,
+  .text-viewer--container--18Ayx,
+  .curriculum-item-footer--footer--Rin15 {
     background-color: var(--primary-bg-color) !important;
   }
+
   .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
   .header--header--1SLKV,
   .lecture-progress-card--lecture-progress-card--1LsBm:hover,
@@ -83,9 +88,12 @@ html body.dark_mode_on {
   .reply-form--form-container--1i7yi,
   .reply-form--form-container--1i7yi form,
   .dropdown-module--dropdown-menu--3HbSn,
-  .bottom-drawer-module--bottom-drawer-container--2ue7_ {
+  .bottom-drawer-module--bottom-drawer-container--2ue7_,
+  .file-uploader--fake-input--35XUn,
+  .video-card--wrapper--ubqp9:hover {
     background-color: var(--secondary-bg-color) !important;
   }
+
   .popover-module--popover--1kskS,
   .single-course-unit--container--2D57g:hover,
   .single-course-unit--container--2D57g:active,
@@ -112,9 +120,11 @@ html body.dark_mode_on {
   .testimonial-card--card--1cdYc,
   .value-props-module--props--small--1I4jK .value-props-module--icon--2esxz,
   textarea,
-  .playback-rate--trigger-text--3DafK {
+  .playback-rate--trigger-text--3DafK,
+  .instructor-card--card-container--1Y-Fb:hover {
     background-color: var(--tertiary-bg-color);
   }
+
   .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
   .curriculum-item-link--curriculum-item--KX9MD.curriculum-item-link--is-current--31BPo
     > .item-link,
@@ -125,18 +135,29 @@ html body.dark_mode_on {
   .control-bar-dropdown--trigger-dark--1qTuU:hover span {
     background-color: var(--quarternary-bg-color);
   }
+
   .ud-btn-white-solid:hover,
   .ud-btn-white-solid.ud-btn-disabled:hover {
     background-color: rgba(255, 255, 255, 0.08) !important;
   }
+
   .filter-container--loading-overlay--2Rm2K {
     background-color: rgba(255, 255, 255, 0.2);
   }
+
   .ud-btn-secondary {
     background-color: var(--primary-font-color);
   }
 
-  *,
+  div,
+  p,
+  li,
+  ul,
+  textarea,
+  input,
+  input::placeholder,
+  option,
+  select,
   .item-card--item-card-title--_-dkH:hover,
   .course-card--container--1QM2W h3[data-purpose='course-title-url'] a,
   .subcategory-link-bar--subcategory-link-bar--24CSR
@@ -151,6 +172,7 @@ html body.dark_mode_on {
   .home ul.tabs li.active a {
     color: var(--primary-font-color) !important;
   }
+
   .ud-badge-hot-and-new,
   .hero-header--title---4jCL,
   .hero-header--subtitle--athYy,
@@ -167,6 +189,30 @@ html body.dark_mode_on {
   .smart-bar--smart-bar--1rOkE a {
     color: var(--secondary-font-color) !important;
   }
+
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span:not(
+      .smart-bar-module--smart-bar__title--TnwIQ,
+      .smart-bar-module--smart-bar__title--TnwIQ + span,
+      .smart-bar-module--smart-bar-timer--rERpC span,
+      .p1n,
+      .kwd,
+      .typ,
+      .pun,
+      .str
+    ),
+  a,
+  label,
+  svg {
+    color: var(--tertiary-font-color);
+  }
+
   .header--dropdown-button--ht4OS:hover .header--dropdown-button-text--2OxOV,
   .header--dropdown-button--ht4OS:hover .ud-icon,
   .ud-popper-open .header--dropdown-button-text--2OxOV,
@@ -181,12 +227,33 @@ html body.dark_mode_on {
     .subcategory-link-bar--subcategory-in-dropdown--hdpz8:hover,
   .header--header--1SLKV .js-header-search-field::placeholder,
   .ud-btn-secondary:active,
-  .ud-btn-secondary:hover {
+  .ud-btn-secondary:hover,
+  .item-card-module--item-card-title--S729p:hover {
     color: var(--hover-font-color);
   }
+
+  .smart-bar-module--smart-bar--yellow--2gqPd {
+    .smart-bar-module--smart-bar__title--TnwIQ,
+    .smart-bar-module--smart-bar__title--TnwIQ + span,
+    .smart-bar-module--smart-bar-timer--rERpC span,
+    .smart-bar-module--smart-bar__close--1CtiJ svg,
+    .smart-bar-module--basic-bar-content--2fGlA a {
+      color: var(--primary-bg-color);
+    }
+
+    .smart-bar-module--smart-bar__close--1CtiJ svg {
+      fill: var(--primary-bg-color);
+    }
+    .smart-bar-module--basic-bar-content--2fGlA a:hover,
+    .smart-bar-module--smart-bar__close--1CtiJ:hover {
+      opacity: 0.7;
+    }
+  }
+
   .ud-footer .inverted-link {
     color: #6e5cd7;
   }
+
   *,
   .header--search-bar--1g81R:hover,
   .ud-footer .language-selector-container .ud-btn,
@@ -196,9 +263,14 @@ html body.dark_mode_on {
   .section--panel--1zoAn .ud-accordion-panel-content,
   .ud-search-form-autocomplete
     .ud-search-form-autocomplete-suggestions-with-image,
-  .course-list--container--FuG0T > *:not(:last-child) {
+  .course-list--container--FuG0T > *:not(:last-child),
+  .ud-text-input-container .ud-text-input-box,
+  .text-input-with-addons--with-addons--1byxB
+    .ud-text-input-container
+    .ud-text-input:nth-child(2) {
     border-color: var(--primary-border-color);
   }
+
   .ud-btn-white-solid,
   .ud-btn-white-solid.ud-btn-disabled,
   .popover-module--popover--1kskS,
@@ -207,6 +279,7 @@ html body.dark_mode_on {
     border: 1px solid var(--primary-border-color);
     box-shadow: none;
   }
+
   .header--search-bar--1g81R {
     border-color: transparent;
   }
@@ -214,14 +287,32 @@ html body.dark_mode_on {
   .ud-fake-toggle-checkbox use {
     display: none;
   }
+
   .ud-real-toggle-input:checked ~ .ud-fake-toggle-checkbox use {
     display: block !important;
   }
+
   .testimonial-card--testimonial--1vJ4Y img,
   img.non-student-cta--non-student-cta__header--3xgVp {
     filter: invert(0.6);
   }
+
   .category-card--img-wrapper--1-XAz img {
     filter: invert(0.8);
+  }
+
+  .playback-rate--trigger-text--3DafK {
+    background-color: transparent;
+  }
+
+  //CODE BLOCK STYLES
+  pre.prettyprinted .pun,
+  pre.prettyprinted .opn,
+  pre.prettyprinted .clo {
+    color: #989eab;
+  }
+
+  pre.prettyprinted .typ {
+    color: #0047d5;
   }
 }

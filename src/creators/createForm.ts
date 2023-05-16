@@ -2,7 +2,7 @@ import { Color } from '../utils';
 
 import FormHTML from '../templates/form.template.html';
 
-const colorRegExp = new RegExp('[#]{1}[0-9a-fA-F]{6}');
+const colorRegExp = new RegExp('#[0-9a-fA-F]{6}');
 
 export default function createForm(
   index: number,

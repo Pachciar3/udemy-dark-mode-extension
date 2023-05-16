@@ -1,7 +1,7 @@
 {
   "name": "dark-mode-extension-for-udemy",
   "version": "2.1.1",
-  "description": "It is a dark mode extension for the udemy website",
+  "description": "A dark theme for the udemy website",
   "scripts": {
     "start": "webpack --watch --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
@@ -43,7 +43,11 @@
     "@babel/runtime": "^7.18.6",
     "raw-loader": "^4.0.2"
   },
-  "browserslist": "> 0.25%, not dead",
+  "browserslist": [
+    "last 2 version",
+    "> .25%",
+    "not dead"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
