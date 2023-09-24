@@ -316,11 +316,12 @@ html body.dark_mode_on {
     color: #0047d5;
   }
 
-  .ud-header.desktop-header-module--header--3nb6v {
+  div[data-testid="mobile-header"],
+  div[data-purpose="header"],
+  [class*="side-drawer-module--drawer-container-"],
+  [class*="mobile-nav-module--nav-"][class*="side-drawer-module--side-drawer-"],
+  button[class*="mobile-nav-module--nav-"][class*="mobile-nav-module--highlighted-"],
+  [class*="mobile-header-module--search-bar-"][class*="mobile-header-module--search-bar-layer-"] {
     background-color: var(--primary-bg-color);
-  }
-
-  a img[alt="Udemy"] {
-    background-color: var(--tertiary-font-color);
   }
 }
