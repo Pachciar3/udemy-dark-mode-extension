@@ -315,4 +315,12 @@ html body.dark_mode_on {
   pre.prettyprinted .typ {
     color: #0047d5;
   }
+
+  .ud-header.desktop-header-module--header--3nb6v {
+    background-color: var(--primary-bg-color);
+  }
+
+  a img[alt="Udemy"] {
+    background-color: var(--tertiary-font-color);
+  }
 }
