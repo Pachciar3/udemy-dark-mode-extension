@@ -10,19 +10,26 @@ chrome.storage.local.get('udemy_dark_mode', function (result) {
       });
       document.body.classList.add('dark_mode_on');
       const logo = document.querySelector(
-        '.header--flex-middle--2QeVR.header--logo--rd7-H img',
+        'img[src*="/staticx/udemy/images/v7/logo-udemy.svg"]',
+      );
+      const logo2 = document.querySelector(
+        'img[src*="/staticx/udemy/images/v7/logo-udemy-inverted.svg"]',
       );
 
-      if (logo && (<HTMLImageElement>logo).src) {
+      if (logo) {
         (<HTMLImageElement>logo).src =
           'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg';
+      }
+      if (logo2) {
+        (<HTMLImageElement>logo2).src =
+          'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
       }
     });
   } else {
     document.body.classList.remove('dark_mode_on');
     document.body.classList.add('dark_mode_off');
     const logo = document.querySelector(
-      '.header--flex-middle--2QeVR.header--logo--rd7-H img',
+      'img[src*="/staticx/udemy/images/v7/logo-udemy"]',
     );
 
     if (logo && (<HTMLImageElement>logo).src) {
