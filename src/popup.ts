@@ -39,12 +39,19 @@ changeColor.onclick = function () {
               func: () => {
                 document.body.classList.remove('dark_mode_on');
                 document.body.classList.add('dark_mode_off');
-                const logo: HTMLImageElement | undefined =
+                const desktopLogo: HTMLImageElement | undefined =
                   document.querySelector(
-                    `.header--flex-middle--2QeVR.header--logo--rd7-H img`,
+                    `.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img`,
                   );
-                if (logo && logo.src) {
-                  logo.src =
+                const mobileLogo: HTMLImageElement | undefined =
+                  document.querySelector(
+                    `.mobile-header-module--row--17mcf.mobile-header-module--middle--3Y6kK img`,
+                  );
+                if (desktopLogo && desktopLogo.src) {
+                  desktopLogo.src =
+                    'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
+                } else if (mobileLogo && mobileLogo.src) {
+                  mobileLogo.src =
                     'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
                 }
               },
