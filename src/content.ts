@@ -10,7 +10,7 @@ chrome.storage.local.get('udemy_dark_mode', function (result) {
       });
       document.body.classList.add('dark_mode_on');
       const logo = document.querySelector(
-        '.header--flex-middle--2QeVR.header--logo--rd7-H img',
+        '.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img',
       );
 
       if (logo && (<HTMLImageElement>logo).src) {
@@ -22,7 +22,7 @@ chrome.storage.local.get('udemy_dark_mode', function (result) {
     document.body.classList.remove('dark_mode_on');
     document.body.classList.add('dark_mode_off');
     const logo = document.querySelector(
-      '.header--flex-middle--2QeVR.header--logo--rd7-H img',
+      '.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img',
     );
 
     if (logo && (<HTMLImageElement>logo).src) {

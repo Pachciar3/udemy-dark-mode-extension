@@ -41,7 +41,7 @@ changeColor.onclick = function () {
                 document.body.classList.add('dark_mode_off');
                 const logo: HTMLImageElement | undefined =
                   document.querySelector(
-                    `.header--flex-middle--2QeVR.header--logo--rd7-H img`,
+                    `.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img`,
                   );
                 if (logo && logo.src) {
                   logo.src =
