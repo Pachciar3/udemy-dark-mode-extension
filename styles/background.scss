@@ -6,7 +6,8 @@ body:not(.dark_mode_off) {
   .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
   .desktop-header-module--header--3nb6v,
   .sidebar--content---4z0-,
-  .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A {
+  .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A,
+  .mobile-header-module--header--3Z-0f {
     background-color: #1c1d1f !important;
   }
   .discovery-units-loading-skeleton--course-image--1ssFq,
@@ -93,7 +94,10 @@ html body.dark_mode_on {
   .dropdown-module--dropdown-menu--3HbSn,
   .bottom-drawer-module--bottom-drawer-container--2ue7_,
   .file-uploader-module--fake-input--1Uwbh,
-  .video-card--wrapper--ubqp9:hover {
+  .video-card--wrapper--ubqp9:hover,
+  .coding-exercise-promotion--coding-exercise-container--21txp,
+  .mobile-header-module--header--3Z-0f,
+  .slider-menu--slider-menu-container--21EWi {
     background-color: var(--secondary-bg-color) !important;
   }
 
@@ -124,7 +128,7 @@ html body.dark_mode_on {
   textarea,
   .playback-rate--trigger-text--3DafK,
   .instructor-card--card-container--1Y-Fb:hover {
-    background-color: var(--tertiary-bg-color);
+    background: var(--tertiary-bg-color) !important;
   }
 
   .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
@@ -134,8 +138,9 @@ html body.dark_mode_on {
   .rt-scaffolding code,
   .ud-avatar,
   .tooltip-module--white--3VDM1,
-  .control-bar-dropdown--trigger-dark--1qTuU:hover span {
-    background-color: var(--quarternary-bg-color);
+  .control-bar-dropdown--trigger-dark--1qTuU:hover span,
+  .carousel-module--container--27wzs button {
+    background: var(--quarternary-bg-color) !important;
   }
 
   .ud-btn-white-solid:hover,
