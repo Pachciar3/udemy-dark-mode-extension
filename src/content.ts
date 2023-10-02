@@ -9,34 +9,24 @@ chrome.storage.local.get('udemy_dark_mode', function (result) {
         document.documentElement.style.setProperty(el.name, el.value);
       });
       document.body.classList.add('dark_mode_on');
-      const desktopLogo = document.querySelector(
-        '.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img',
+      const logo = document.querySelector(
+        '.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img, .mobile-header-module--row--17mcf.mobile-header-module--middle--3Y6kK img',
       );
-      const mobileLogo = document.querySelector(
-        '.mobile-header-module--row--17mcf.mobile-header-module--middle--3Y6kK img',
-      );
-      if (desktopLogo && (<HTMLImageElement>desktopLogo).src) {
-        (<HTMLImageElement>desktopLogo).src =
-          'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg';
-      } else if (mobileLogo && (<HTMLImageElement>mobileLogo).src) {
-        (<HTMLImageElement>mobileLogo).src =
+
+      if (logo && (<HTMLImageElement>logo).src) {
+        (<HTMLImageElement>logo).src =
           'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg';
       }
     });
   } else {
     document.body.classList.remove('dark_mode_on');
     document.body.classList.add('dark_mode_off');
-    const desktopLogo = document.querySelector(
-      '.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img',
+    const logo = document.querySelector(
+      '.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img, .mobile-header-module--row--17mcf.mobile-header-module--middle--3Y6kK img',
     );
-    const mobileLogo = document.querySelector(
-      '.mobile-header-module--row--17mcf.mobile-header-module--middle--3Y6kK img',
-    );
-    if (desktopLogo && (<HTMLImageElement>desktopLogo).src) {
-      (<HTMLImageElement>desktopLogo).src =
-        'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
-    } else if (mobileLogo && (<HTMLImageElement>mobileLogo).src) {
-      (<HTMLImageElement>mobileLogo).src =
+
+    if (logo && (<HTMLImageElement>logo).src) {
+      (<HTMLImageElement>logo).src =
         'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
     }
   }
