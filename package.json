@@ -1,6 +1,6 @@
 {
   "name": "dark-mode-extension-for-udemy",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A dark theme for the udemy website",
   "scripts": {
     "start": "webpack --watch --config webpack.dev.js",
