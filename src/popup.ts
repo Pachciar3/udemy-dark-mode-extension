@@ -1,3 +1,5 @@
+import { imageClassNames, logoUrl } from './constants';
+
 const changeColor = document.getElementById('changeColor') as HTMLInputElement;
 
 document.getElementById('options-page').addEventListener('click', () => {
@@ -36,18 +38,16 @@ changeColor.onclick = function () {
           async function (tabs) {
             await chrome.scripting.executeScript({
               target: { tabId: tabs[0].id },
-              func: () => {
+              func: ({ imageClassNames, logoUrl }) => {
                 document.body.classList.remove('dark_mode_on');
                 document.body.classList.add('dark_mode_off');
                 const logo: HTMLImageElement | undefined =
-                  document.querySelector(
-                    `.desktop-header-module--flex-middle--1e7c8.desktop-header-module--logo--2Qf0r img, .mobile-header-module--row--17mcf.mobile-header-module--middle--3Y6kK img, .desktop-header_flex-middle__JjTaI .desktop-header_logo__wQjhP img`,
-                  );
+                  document.querySelector(imageClassNames);
                 if (logo && logo.src) {
-                  logo.src =
-                    'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg';
+                  logo.src = logoUrl;
                 }
               },
+              args: [{ imageClassNames, logoUrl }],
             });
           },
         );
