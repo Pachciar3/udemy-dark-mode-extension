@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack --watch --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint --ext .ts,.js --max-warnings=0 .",
+    "lint": "eslint --ext './**/*.{ts,js}' --max-warnings=0 .",
     "prettier": "prettier --write"
   },
   "license": "MIT",
@@ -45,5 +45,17 @@
     "last 2 version",
     "> .25%",
     "not dead"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{js,ts,json,css,scss,md}": [
+      "prettier --write",
+      "yarn lint",
+      "git add"
+    ]
+  }
 }
