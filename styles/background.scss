@@ -40,7 +40,9 @@ html body.dark_mode_on {
   .image-upload-preview-with-crop--image-wrapper--2soBW,
   .fast-feedback--container--1mut2,
   .text-viewer--container--18Ayx,
-  .curriculum-item-footer--footer--Rin15 {
+  .curriculum-item-footer--footer--Rin15,
+  .ud-text-input,
+  .desktop-header_search-bar__XKKoS {
     background-color: var(--primary-bg-color) !important;
   }
 
@@ -97,7 +99,10 @@ html body.dark_mode_on {
   .video-card--wrapper--ubqp9:hover,
   .coding-exercise-promotion--coding-exercise-container--21txp,
   .mobile-header-module--header--3Z-0f,
-  .slider-menu--slider-menu-container--21EWi {
+  .slider-menu--slider-menu-container--21EWi,
+  .activity-notification-module--card--cwXSd:hover,
+  .desktop-header_header__f_kaY,
+  .popover_popover__6Xax7 {
     background-color: var(--secondary-bg-color) !important;
   }
 
@@ -106,13 +111,15 @@ html body.dark_mode_on {
   .single-course-unit--container--2D57g:active,
   .popular-topics-unit--topic-tag--3tYg-:hover,
   .popular-topics-unit--topic-tag--3tYg-:active,
+  .popover_arrow__8nSwm::before,
+  .popover_arrow__8nSwm::after,
   .popover-module--arrow--abDwz::before,
   .popover-module--arrow--abDwz::after,
   .curriculum-item-link--curriculum-item--KX9MD > .item-link,
   .section--panel--1zoAn .ud-accordion-panel-content,
   .dropdown--menu--38WE2 .ud-block-list,
   .text-input-form--text-input-form--170x1 input,
-  .panel-menu--footer--sY39u,
+  .panel-menu_footer__wTf2N,
   .ud-avatar,
   .options-menu--menu-heading--zKjVN,
   .billboard-banner--billboard--Cgd8a .billboard-banner--content-box--3fy3A,
@@ -127,7 +134,11 @@ html body.dark_mode_on {
   .value-props-module--props--small--1I4jK .value-props-module--icon--2esxz,
   textarea,
   .playback-rate--trigger-text--3DafK,
-  .instructor-card--card-container--1Y-Fb:hover {
+  .instructor-card--card-container--1Y-Fb:hover,
+  .panel-menu-module--footer--1ZZRt,
+  .alert-banner_alert-banner-information__IN2iW,
+  .popular-topics-unit_topic-tag__25Akd:active,
+  .popular-topics-unit_topic-tag__25Akd:hover {
     background-color: var(--tertiary-bg-color);
   }
 
@@ -148,7 +159,8 @@ html body.dark_mode_on {
     background-color: rgba(255, 255, 255, 0.08) !important;
   }
 
-  .filter-container--loading-overlay--2Rm2K {
+  .filter-container--loading-overlay--2Rm2K,
+  .filter-container_loading-overlay__u8Qhk {
     background-color: rgba(255, 255, 255, 0.2);
   }
 
@@ -176,7 +188,9 @@ html body.dark_mode_on {
   .shopping-item--container--XGMrp .shopping-item--course-title--1nay8 a,
   .header .tab-bar a.back,
   .header .language-selector .dropdown-toggle,
-  .home ul.tabs li.active a {
+  .home ul.tabs li.active a,
+  .popular-topics-unit_topic-tag__25Akd:active,
+  .popular-topics-unit_topic-tag__25Akd:hover {
     color: var(--primary-font-color) !important;
   }
 
@@ -193,7 +207,9 @@ html body.dark_mode_on {
   .ud-badge-highest-rated,
   .ud-badge-new,
   .smart-bar--smart-bar--1rOkE .smart-bar--basic-bar-content--2jJSQ span,
-  .smart-bar--smart-bar--1rOkE a {
+  .smart-bar--smart-bar--1rOkE a,
+  .smart-bar_smart-bar__content__EKt3o span,
+  .smart-bar_smart-bar__content__EKt3o a {
     color: var(--secondary-font-color) !important;
   }
 
@@ -311,6 +327,12 @@ html body.dark_mode_on {
   .testimonial-card--testimonial--1vJ4Y img,
   img.non-student-cta--non-student-cta__header--3xgVp {
     filter: invert(0.6);
+  }
+
+  .billboard-banner--billboard--Cgd8a
+    .billboard-banner--image-container--3lMr5
+    img {
+    filter: brightness(0.45);
   }
 
   .category-card--img-wrapper--1-XAz img {
