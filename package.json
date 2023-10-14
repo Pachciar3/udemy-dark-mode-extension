@@ -5,8 +5,9 @@
   "scripts": {
     "start": "webpack --watch --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint --ext './**/*.{ts,js}' --max-warnings=0 .",
-    "prettier": "prettier --write"
+    "lint": "eslint ./src",
+    "prettier": "prettier --write",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "devDependencies": {
@@ -54,7 +55,7 @@
   "lint-staged": {
     "./**/*.{js,ts,json,css,scss,md}": [
       "prettier --write",
-      "yarn lint",
+      "npm run lint",
       "git add"
     ]
   }
