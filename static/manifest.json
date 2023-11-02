@@ -1,6 +1,6 @@
 {
   "name": "Udemy Dark Theme",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "A dark theme for the udemy website",
   "permissions": ["activeTab", "declarativeContent", "storage", "scripting"],
   "options_page": "options.html",
