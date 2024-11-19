@@ -3,9 +3,9 @@ body:not(.dark_mode_off) {
   background-color: #121212 !important;
   color: #dcc2c2;
 
-  .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
-  .desktop-header-module--header--3nb6v,
-  .sidebar--content---4z0-,
+  .link-bar_link-bar__Ut8Mt .link-bar_categories__y5LfI,
+  .desktop-header-module--header--a5wri,
+  .sidebar--content--ot5Wx,
   .wide-hero-banner-slide-module--banner--PnkIw
     .wide-hero-banner-slide-module--content-box--1HbbP,
   .mobile-header-module--header--3Z-0f,
@@ -44,7 +44,7 @@ body:not(.dark_mode_off) {
 html body.dark_mode_on {
   background-color: var(--primary-bg-color) !important;
 
-  .desktop-header-module--search-bar--2V17S,
+  .desktop-header-module--search-bar--49122,
   .styles--success-header--1zGG6,
   .styles--success--24Rts,
   .profile-course-lists--no-tabs-content--2uXSX,
@@ -54,21 +54,21 @@ html body.dark_mode_on {
   .image-upload-preview-with-crop--image-wrapper--2soBW,
   .fast-feedback--container--1mut2,
   .text-viewer--container--18Ayx,
-  .curriculum-item-footer--footer--Rin15,
+  .curriculum-item-footer--footer--I6XWH,
   .ud-text-input,
   .desktop-header_search-bar__XKKoS,
-  .curriculum-item-view--content--3ABmp {
+  .curriculum-item-view--content--aaJOw {
     background-color: var(--primary-bg-color) !important;
   }
 
-  .link-bar--link-bar--NoEGM .link-bar--categories--37yJn,
+  .link-bar_link-bar__Ut8Mt .link-bar_categories__y5LfI,
   .header--header--1SLKV,
   .lecture-progress-card--lecture-progress-card--1LsBm:hover,
   .lecture-progress-card--lecture-progress-card--1LsBm:active,
   .ud-badge-bestseller,
-  .alert-banner-module--alert-banner-information--mrXyw,
-  .section--section--BukKG .ud-accordion-panel-toggler,
-  .sidebar--sidebar-header--3RQk_,
+  .alert-banner-module--alert-banner-information--p8hvz,
+  .section--section--yXfqc .ud-accordion-panel-toggler,
+  .sidebar--sidebar-header--Ohywj,
   .section--panel--1zoAn .ud-accordion-panel-toggler,
   .sidebar-container--content--2KZyB,
   .ud-select,
@@ -108,7 +108,7 @@ html body.dark_mode_on {
   .section--panel--1zoAn .section--toggle-item-description-button--2CBSP,
   .reply-form--form-container--1i7yi,
   .reply-form--form-container--1i7yi form,
-  .dropdown-module--dropdown-menu--3HbSn,
+  .dropdown-module--dropdown-menu--7Qc2I,
   .bottom-drawer-module--bottom-drawer-container--2ue7_,
   .file-uploader-module--fake-input--1Uwbh,
   .video-card--wrapper--ubqp9:hover,
@@ -116,11 +116,12 @@ html body.dark_mode_on {
   .mobile-header-module--header--3Z-0f,
   .slider-menu--slider-menu-container--21EWi,
   .activity-notification-module--card--cwXSd:hover,
-  .desktop-header_header__f_kaY {
+  .desktop-header_header__f_kaY,
+  .quiz-page-layout--container--3UG5o {
     background-color: var(--secondary-bg-color) !important;
   }
 
-  .popover-module--popover--1kskS,
+  .popover-module--popover--HrSFz,
   .popover_popover__6Xax7,
   .single-course-unit--container--2D57g:hover,
   .single-course-unit--container--2D57g:active,
@@ -128,9 +129,9 @@ html body.dark_mode_on {
   .popular-topics-unit--topic-tag--3tYg-:active,
   .popover_arrow__8nSwm::before,
   .popover_arrow__8nSwm::after,
-  .popover-module--arrow--abDwz::before,
-  .popover-module--arrow--abDwz::after,
-  .curriculum-item-link--curriculum-item--KX9MD > .item-link,
+  .popover-module--arrow--TfIVX::before,
+  .popover-module--arrow--TfIVX::after,
+  .curriculum-item-link--curriculum-item--OVP5S > .item-link,
   .section--panel--1zoAn .ud-accordion-panel-content,
   .dropdown--menu--38WE2 .ud-block-list,
   .text-input-form--text-input-form--170x1 input,
@@ -151,7 +152,7 @@ html body.dark_mode_on {
   textarea,
   .playback-rate--trigger-text--3DafK,
   .instructor-card--card-container--1Y-Fb:hover,
-  .panel-menu-module--footer--1ZZRt,
+  .panel-menu-module--footer--mjYSO,
   .alert-banner_alert-banner-information__IN2iW,
   .popular-topics-unit_topic-tag__25Akd:active,
   .popular-topics-unit_topic-tag__25Akd:hover,
@@ -159,8 +160,8 @@ html body.dark_mode_on {
     background-color: var(--tertiary-bg-color);
   }
 
-  .curriculum-item-link--curriculum-item--KX9MD > .item-link:hover,
-  .curriculum-item-link--curriculum-item--KX9MD.curriculum-item-link--is-current--31BPo
+  .curriculum-item-link--curriculum-item--OVP5S > .item-link:hover,
+  .curriculum-item-link--curriculum-item--OVP5S.curriculum-item-link--is-current--2mKk4
     > .item-link,
   .rt-editor pre.prettyprint,
   .rt-scaffolding code,
@@ -313,7 +314,7 @@ html body.dark_mode_on {
   }
 
   *,
-  .desktop-header-module--search-bar--2V17S:hover,
+  .desktop-header-module--search-bar--49122:hover,
   .ud-footer .language-selector-container .ud-btn,
   .ud-footer .language-selector-container .ud-icon,
   .course-landing-page_sidebar-container .intro-asset--img-aspect--3fbKk img,
@@ -331,7 +332,7 @@ html body.dark_mode_on {
 
   .ud-btn-white-solid,
   .ud-btn-white-solid.ud-btn-disabled,
-  .popover-module--popover--1kskS,
+  .popover-module--popover--HrSFz,
   .popover_popover__6Xax7,
   .rt-editor pre.prettyprint,
   .rt-scaffolding code {
@@ -339,7 +340,7 @@ html body.dark_mode_on {
     box-shadow: none;
   }
 
-  .desktop-header-module--search-bar--2V17S {
+  .desktop-header-module--search-bar--49122 {
     border-color: transparent;
   }
 
@@ -368,6 +369,14 @@ html body.dark_mode_on {
 
   .playback-rate--trigger-text--3DafK {
     background-color: transparent;
+  }
+
+  .link-bar-module--link-bar--LnCxo {
+    background-color: #333333;
+  }
+
+  .wide-hero-banner-slide-module--banner--Mo8Lz .wide-hero-banner-slide-module--content-box--wPFeP {
+    background-color: #333333;
   }
 
   //CODE BLOCK STYLES
